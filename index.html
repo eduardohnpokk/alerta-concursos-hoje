@@ -4,355 +4,652 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerta Concursos Hoje</title>
+    <title>Alerta Concursos Hoje | Editais e Vagas</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #f4f4f4; }
-        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; background: #27ae60; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
-        h1 { color: #2c3e50; text-align: center; }
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --amazon: #f39c12;
+            --shopee: #ee4d2d;
+            --bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; background: var(--bg); color: #333; }
+        header { background: linear-gradient(135deg, #2c3e50 0%, #000000 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--accent); }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: -1px; }
+        header p { opacity: 0.8; margin-top: 10px; }
+        
+        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        
+        .ads-space { background: #eee; border: 2px dashed #ccc; padding: 20px; text-align: center; margin: 20px 0; border-radius: 8px; font-size: 12px; color: #888; }
+        
+        .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; border-left: 5px solid #ddd; }
+        .card:hover { transform: translateY(-5px); border-left-color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--primary); line-height: 1.3; }
+        .card .tag { background: var(--accent); color: white; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+        .card .data { font-size: 13px; color: #888; }
+        
+        .buttons-container { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+        .btn { flex: 1; min-width: 200px; text-align: center; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: opacity 0.2s; }
+        .btn-amazon { background: var(--amazon); color: white; }
+        .btn-shopee { background: var(--shopee); color: white; }
+        .btn:hover { opacity: 0.9; }
+        
+        .link-original { color: #3498db; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .link-original:hover { text-decoration: underline; }
+
+        footer { background: #222; color: #888; padding: 40px 20px; text-align: center; margin-top: 50px; font-size: 14px; }
+        footer b { color: white; }
     </style>
 </head>
 <body>
-    <h1>📍 Alerta Concursos Hoje</h1>
-    <p style="text-align:center">Última atualização: 10/01/2026 13:09</p>
-    <div id="noticias">
+    <header>
+        <h1>📍 Alerta Concursos Hoje</h1>
+        <p>Sua central automática de editais, vagas e materiais de estudo</p>
+    </header>
+
+    <div class="container">
+        <div class="ads-space">--- ESPAÇO PARA GOOGLE ADS (TOPO) ---</div>
         
+        <p style="text-align:right; font-size: 12px; color: #666;">
+            🔄 Atualizado em: 10/01/2026 às 13:51
+        </p>
+
+        <div id="noticias">
+            
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concursos Ceará: vagas e editais para 2026! - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 04:03:24 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yaVlOZ09MYWVnWkJnVEU1ak9FdXlpaEJaY01NODdwY0RTZVpuMFRYMkMtajQ1bnVzRVBhUUJXcWhrNnpkU2tERkJMdWZlVHVUTzBhVVY0NGhhOU04YVB1OGZOYWx5Q1hU?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 04:03:24 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yaVlOZ09MYWVnWkJnVEU1ak9FdXlpaEJaY01NODdwY0RTZVpuMFRYMkMtajQ1bnVzRVBhUUJXcWhrNnpkU2tERkJMdWZlVHVUTzBhVVY0NGhhOU04YVB1OGZOYWx5Q1hU?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso SME Barros Cassal RS: inscrições abertas; veja! - Blog Gran Cursos Online</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 00:12:15 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5XelNUM3hGalc1WF9CM0V5VndON0FEOUlNNExRaFc2YTBXQlVPbGZYRFFJS3FLRG5Zakp6ZVF1TUxSaFhzdU43WVA3blNjVjdUMTAyNWU3RmZkazdhSF8tTGFQRF9BekJGUWJCSzZVZmVDTEdyVkE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+SME+Barros+Cassal+RS+inscrições+abertas+veja++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+SME+Barros+Cassal+RS+inscrições+abertas+veja++Blog+Gran+Cursos+Online" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 00:12:15 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5XelNUM3hGalc1WF9CM0V5VndON0FEOUlNNExRaFc2YTBXQlVPbGZYRFFJS3FLRG5Zakp6ZVF1TUxSaFhzdU43WVA3blNjVjdUMTAyNWU3RmZkazdhSF8tTGFQRF9BekJGUWJCSzZVZmVDTEdyVkE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+SME+Barros+Cassal+RS+inscrições+abertas+veja++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+SME+Barros+Cassal+RS+inscrições+abertas+veja++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso de Jundiaí-SP 2026: Prefeitura lança dois editais - Ache Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 09:32:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNcTNxeXE0MGluN0xPNjdCM3ZpLVdaV2RjdXNtT0lqWWhtQjA1OTVrMlFKYXhTZGdGM0VFaktybEloRHkweXE5WS1KVXMyNzlhQlZkX3NYN2puNTZBaUZJZHpqX2hfNk5IQ2U0MHp3dW8yZ2N0aXVFVEdGZHRpUXBSVVZKS0Z1YkxNcXgtazZaN3o3b04tMFFTX3hhTGdEaGtDS09HY2x2R1RoZGhFXzlTVll0Z2xtaFHSAbwBQVVfeXFMUGNoT3M2cUpabURDcERBUTVEc29iQVM3bDNjUEpWaUc3SDZDTFUySVBZLTZXQmRKc090RlVlMWZFQ3o1Q0JxTzE0bjJPZzV0LXh4YVdZdGE2OGxCV3FBT3ZIbEVfZWlubVJ2eXU5RHlwVF80SmZmRFVVMlhaVkJOU2pBbk11OHdkNk1PWGJuY3lseTA1aDh6RGF5RGdCTEUwczg1OV9vYjBQbGhEc1ljTHdkQW1pOXZuRGl3ZGU?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+de+JundiaíSP+2026+Prefeitura+lança+dois+editais++Ache+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+de+JundiaíSP+2026+Prefeitura+lança+dois+editais++Ache+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 09:32:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNcTNxeXE0MGluN0xPNjdCM3ZpLVdaV2RjdXNtT0lqWWhtQjA1OTVrMlFKYXhTZGdGM0VFaktybEloRHkweXE5WS1KVXMyNzlhQlZkX3NYN2puNTZBaUZJZHpqX2hfNk5IQ2U0MHp3dW8yZ2N0aXVFVEdGZHRpUXBSVVZKS0Z1YkxNcXgtazZaN3o3b04tMFFTX3hhTGdEaGtDS09HY2x2R1RoZGhFXzlTVll0Z2xtaFHSAbwBQVVfeXFMUGNoT3M2cUpabURDcERBUTVEc29iQVM3bDNjUEpWaUc3SDZDTFUySVBZLTZXQmRKc090RlVlMWZFQ3o1Q0JxTzE0bjJPZzV0LXh4YVdZdGE2OGxCV3FBT3ZIbEVfZWlubVJ2eXU5RHlwVF80SmZmRFVVMlhaVkJOU2pBbk11OHdkNk1PWGJuY3lseTA1aDh6RGF5RGdCTEUwczg1OV9vYjBQbGhEc1ljTHdkQW1pOXZuRGl3ZGU?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+de+JundiaíSP+2026+Prefeitura+lança+dois+editais++Ache+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+de+JundiaíSP+2026+Prefeitura+lança+dois+editais++Ache+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
-    
+    <div class="ads-space">--- ESPAÇO PARA GOOGLE ADS (MEIO) ---</div>
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concursos Guarda Municipal: as oportunidades de 2026! - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 03:27:47 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9JeGJPbW0tT1JIYlR6X00tdE50OGkxYVFFZ1NZc3ZreFJyVnRiLW16THpnOTk0NUdwNjNjUjhUamNEazU4dGJoeHlVUkhwcUFGUkdUQkFoYkdFZWUwblMtLUFBMkt6eHQ3OEYzZlpDOE95aEdZWWlrejREcw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 03:27:47 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9JeGJPbW0tT1JIYlR6X00tdE50OGkxYVFFZ1NZc3ZreFJyVnRiLW16THpnOTk0NUdwNjNjUjhUamNEazU4dGJoeHlVUkhwcUFGUkdUQkFoYkdFZWUwblMtLUFBMkt6eHQ3OEYzZlpDOE95aEdZWWlrejREcw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso HCFMRP-USP Ribeirão Preto SP: 3 vagas para médico I abertas - Folha Dirigida</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 18:54:01 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNNzQ5VzVLaVVzUkgxT29uZ19EWno4WXo0cXdUSWF4WVYzM2lhSEpzdVVZQTlxbzIzSWVFNzRxYkNmazk0SnQtMnM2bmFNeDFyMUloZ1RtdFB0MXZLYmh6VXRNdHl4LXVEUVU3TExKWVo1WFdlVzNCYVo4RE01NmJVWWxyaUthOUVNdDdiRndzcw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+HCFMRPUSP+Ribeirão+Preto+SP+3+vagas+para+médico+I+abertas++Folha+Dirigida&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+HCFMRPUSP+Ribeirão+Preto+SP+3+vagas+para+médico+I+abertas++Folha+Dirigida" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 18:54:01 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNNzQ5VzVLaVVzUkgxT29uZ19EWno4WXo0cXdUSWF4WVYzM2lhSEpzdVVZQTlxbzIzSWVFNzRxYkNmazk0SnQtMnM2bmFNeDFyMUloZ1RtdFB0MXZLYmh6VXRNdHl4LXVEUVU3TExKWVo1WFdlVzNCYVo4RE01NmJVWWxyaUthOUVNdDdiRndzcw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+HCFMRPUSP+Ribeirão+Preto+SP+3+vagas+para+médico+I+abertas++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+HCFMRPUSP+Ribeirão+Preto+SP+3+vagas+para+médico+I+abertas++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Edital para Assembleia de Rondônia registra mais de 35 mil inscritos - Ceisc</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:30:47 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPYmN5Z2ZzXy1na0taeHR0YS1vVU5fejRBMGkzNndkdHpXbm1Uclp6N2VocldXcXBfN29PeHBkdUZwdlRjRFRGaDZBQmJ5R1phdUk0TDBRZ1psVjFodTJlb2IyckdUZG1kVWU2UnJsQzRSRFBRSGRrZ3pJQWdSYW1qZGxrSjNTbTJtVzRwQWRwckV5WFlDVTFVc0FScUw2b1VFVTNN?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Edital+para+Assembleia+de+Rondônia+registra+mais+de+35+mil+inscritos++Ceisc&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Edital+para+Assembleia+de+Rondônia+registra+mais+de+35+mil+inscritos++Ceisc" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:30:47 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPYmN5Z2ZzXy1na0taeHR0YS1vVU5fejRBMGkzNndkdHpXbm1Uclp6N2VocldXcXBfN29PeHBkdUZwdlRjRFRGaDZBQmJ5R1phdUk0TDBRZ1psVjFodTJlb2IyckdUZG1kVWU2UnJsQzRSRFBRSGRrZ3pJQWdSYW1qZGxrSjNTbTJtVzRwQWRwckV5WFlDVTFVc0FScUw2b1VFVTNN?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Edital+para+Assembleia+de+Rondônia+registra+mais+de+35+mil+inscritos++Ceisc&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Edital+para+Assembleia+de+Rondônia+registra+mais+de+35+mil+inscritos++Ceisc" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Prefeitura abre 150 vagas para gari; inscrições abertas - A TARDE</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 03:07:21 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPaDlWVURkdFpENXlyRnpTRmx0UlpYMmF2ejRWbFNla0pNMDhIVVNYVHFETHNOdFlMM29CdlRKWVk4WjBXRmh6eDBXUXdoNzJ2N2k0c3ZvZ1Vrb25yNTBxQlJvQ2NzR0NDbGxBOENMODdpdEF0X0tuYV9OOEZKYjFkWkVWZ3F1YWNwcEpVMUlOajJack1JUE9yeU5KRG9XbjhlSmfSAaIBQVVfeXFMT2g5VlVEZHRaRDV5ckZ6U0ZsdFJaWDJhdno0VmxTZWtKTTA4SFVTWFRxRExzTnRZTDNvQnZUSllZOFowV0ZoengwV1F3aDcydjdpNHN2b2dVa29ucjUwcUJSb0Njc0dDQ2xsQThDTDg3aXRBdF9LbmFfTjhGSmIxZFpFVmdxdWFjcHBKVTFJTmoyWnJNSVBPcnlOSkRvV244ZUpn?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+abre+150+vagas+para+gari+inscrições+abertas++A+TARDE&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+abre+150+vagas+para+gari+inscrições+abertas++A+TARDE" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 03:07:21 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPaDlWVURkdFpENXlyRnpTRmx0UlpYMmF2ejRWbFNla0pNMDhIVVNYVHFETHNOdFlMM29CdlRKWVk4WjBXRmh6eDBXUXdoNzJ2N2k0c3ZvZ1Vrb25yNTBxQlJvQ2NzR0NDbGxBOENMODdpdEF0X0tuYV9OOEZKYjFkWkVWZ3F1YWNwcEpVMUlOajJack1JUE9yeU5KRG9XbjhlSmfSAaIBQVVfeXFMT2g5VlVEZHRaRDV5ckZ6U0ZsdFJaWDJhdno0VmxTZWtKTTA4SFVTWFRxRExzTnRZTDNvQnZUSllZOFowV0ZoengwV1F3aDcydjdpNHN2b2dVa29ucjUwcUJSb0Njc0dDQ2xsQThDTDg3aXRBdF9LbmFfTjhGSmIxZFpFVmdxdWFjcHBKVTFJTmoyWnJNSVBPcnlOSkRvV244ZUpn?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+abre+150+vagas+para+gari+inscrições+abertas++A+TARDE&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+abre+150+vagas+para+gari+inscrições+abertas++A+TARDE" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Prefeitura de Taió - SC abre edital de Processo Seletivo com diversos cargos - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:39:49 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNbDFtZXBYMDB1ellCYTlvTnh0Qi1WVWs2VG5LV3lzNmMtdG5lck1aVTdPZXJjc2lYQklKSlhsMVBuTHRYaVpacDF3LVRZNzk0MVduVk55X0s1RU9nQ2tJbDZIMHVab3dPUTd3YXpzQk5tUW9scF9sb1dhUjNMQWZybDA0TGtGLXlVYVVNcUxiYzhGVldnbzhfYm1wQkNhdm4zTk8yRmszNHloZXJET1NjVnE4VjlIdw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+Taió++SC+abre+edital+de+Processo+Seletivo+com+diversos+cargos++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+Taió++SC+abre+edital+de+Processo+Seletivo+com+diversos+cargos++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Fundação Osorio: inscrições abertas; até R$ 13,2 mil! - Estratégia Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 21:20:11 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9HOFVMclRYMHhsblIwekE4MW13VW9waTF2MVJyS3pveUtFWEtvYTR4cmxjalRmX09tZGpOb2hOc0tvSnJ4QzJmUkNuS1pnTG9pd2d6Yi1EN0hGNlh0b21uNXJmaGhvMWxodUkxNlZKNUpXcDRTd3h1ZQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Fundação+Osorio+inscrições+abertas+até+R+132+mil++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Fundação+Osorio+inscrições+abertas+até+R+132+mil++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Jundiaí SP: SAIU! iniciais até R$ 9,5 mil! - Blog Gran Cursos Online</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 00:41:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPMW43VkdhOTlLU2ZPRTlsVWhIeVBrUjNGTzJfNjUtWU03YUlPZE9taVI1d1hoTDJ3Y2M4UjJCU0ZIcEstTTdaaGdPMGFFY1c0Yk1ENWE5RGlLYXBQVWNDNk5pcGQtUVY1Q284YlBXTFUxVzBqQUdyeTBjT0pUV3FmbW03Y21yLTFEMFE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Jundiaí+SP+SAIU+iniciais+até+R+95+mil++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Jundiaí+SP+SAIU+iniciais+até+R+95+mil++Blog+Gran+Cursos+Online" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Prefeitura de Grão-Pará - SC abre Processos Seletivos para Professor de Educação Física e Auxiliar de Serviços - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:58:29 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaWNaZkF3RnFSbzYtNml4cnpfLUUxSXNNY3pzZlVqUGQ2cFA2NVZ4R3NxOTRCLTUyRWpSV1FIelBGR0o4dGJRTlI2TFpWR2VfQ2paYjMySkN0RmJWc2lkNjVRUF9Fa2otdjJSenZ6ZXJ2dEdobUhqazVLUVkxV1B4NFI0RllzOWlUX1JmZHRkUHdvMlYtMFJ2THNYaUc5Z09lSjB6TEhPdlJXb3R3MTlxN1gyOFRjN1FHb1lodnM0alJ2eHlqOHNrV2hNVXlRcFpFVzVnc1pLWGY4aEFGMy1rRHZCRQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+GrãoPará++SC+abre+Processos+Seletivos+para+Professor+de+Educação+Física+e+Auxiliar+de+Serviços++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+GrãoPará++SC+abre+Processos+Seletivos+para+Professor+de+Educação+Física+e+Auxiliar+de+Serviços++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:58:29 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaWNaZkF3RnFSbzYtNml4cnpfLUUxSXNNY3pzZlVqUGQ2cFA2NVZ4R3NxOTRCLTUyRWpSV1FIelBGR0o4dGJRTlI2TFpWR2VfQ2paYjMySkN0RmJWc2lkNjVRUF9Fa2otdjJSenZ6ZXJ2dEdobUhqazVLUVkxV1B4NFI0RllzOWlUX1JmZHRkUHdvMlYtMFJ2THNYaUc5Z09lSjB6TEhPdlJXb3R3MTlxN1gyOFRjN1FHb1lodnM0alJ2eHlqOHNrV2hNVXlRcFpFVzVnc1pLWGY4aEFGMy1rRHZCRQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+GrãoPará++SC+abre+Processos+Seletivos+para+Professor+de+Educação+Física+e+Auxiliar+de+Serviços++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+GrãoPará++SC+abre+Processos+Seletivos+para+Professor+de+Educação+Física+e+Auxiliar+de+Serviços++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Fundação Osorio: inscrições abertas; até R$ 13,2 mil! - Estratégia Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 21:20:11 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9HOFVMclRYMHhsblIwekE4MW13VW9waTF2MVJyS3pveUtFWEtvYTR4cmxjalRmX09tZGpOb2hOc0tvSnJ4QzJmUkNuS1pnTG9pd2d6Yi1EN0hGNlh0b21uNXJmaGhvMWxodUkxNlZKNUpXcDRTd3h1ZQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Fundação+Osorio+inscrições+abertas+até+R+132+mil++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Fundação+Osorio+inscrições+abertas+até+R+132+mil++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Jundiaí SP: SAIU! iniciais até R$ 9,5 mil! - Blog Gran Cursos Online</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 00:41:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPMW43VkdhOTlLU2ZPRTlsVWhIeVBrUjNGTzJfNjUtWU03YUlPZE9taVI1d1hoTDJ3Y2M4UjJCU0ZIcEstTTdaaGdPMGFFY1c0Yk1ENWE5RGlLYXBQVWNDNk5pcGQtUVY1Q284YlBXTFUxVzBqQUdyeTBjT0pUV3FmbW03Y21yLTFEMFE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Jundiaí+SP+SAIU+iniciais+até+R+95+mil++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Jundiaí+SP+SAIU+iniciais+até+R+95+mil++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concursos MP 2026: confira as oportunidades previstas! - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 10:38:07 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wY19Ua2JKUGlCWjlySlE3YU5Tek44QW9NSXQtVHpfcHNGc3FVUE9OeHJkUHZuc25hajhzeExkd3NiZUcwSTdxSVJvRW9RdnU2SHkzMnhNaEpnTFVKUllsenRlRXpQRmpa?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 10:38:07 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wY19Ua2JKUGlCWjlySlE3YU5Tek44QW9NSXQtVHpfcHNGc3FVUE9OeHJkUHZuc25hajhzeExkd3NiZUcwSTdxSVJvRW9RdnU2SHkzMnhNaEpnTFVKUllsenRlRXpQRmpa?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Edital Ibiam-SC 2026: Concurso abre 13 vagas de até R$ 7.627 - Ache Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 15:23:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxONTV4SHVSeFJrZENra3NKbDc1UjliMWZqZ3NhNkZOdWZXTnVnQ0NWUVJUQzVLaDhmOGZHYzdteXY5RWJDM3k1dzN4eFBBUDJEeU9rZF9TUXcySEhFb1pyc09Ma0o5cU9yUXIwd05kRHVMZXYzV1NhY1dpLThhLTllem9jYmd2b093eG9NTzdXc3gtZlZmQURTS2wwOGN5SExMWW1Md1lubkZzNnpNMnFSWEo5a9IBuAFBVV95cUxPdG9JejhPNklISUluanFtWXlBOTZZVUdJbUl0SEx1UXB1b1lWN0VWRVdmQ0pGcldwRG9DYUlrSWVCNVY0bTB1Y0t2TXI4alRYc21ES1hORFJtaVFqdFVraGxkYkZ3OFVtMkpxVUVQa3JZaUNsWDVaMUhxVlhpZExfX3pkdkFGWEJyQVpBc2tJSVdlUndBY1I2RnBuWjV5bE1mWi1RM25QaE9XSkJMS2RvVEdaWTJBb09f?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Edital+IbiamSC+2026+Concurso+abre+13+vagas+de+até+R+7627++Ache+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Edital+IbiamSC+2026+Concurso+abre+13+vagas+de+até+R+7627++Ache+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso IATER RR: primeiro edital para efetivos é anunciado! - Blog Gran Cursos Online</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 17:22:19 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5zWjhfZ1F4Q0lRUGt5RWVBYmpqZVBUUTJKemFER2hRQXVmd204MktPSlVPZTVCRW9YR1E1MGx6Q3VucEo5OHdTNHctVzgwZHEzNHJIanlsSU9NeTZNd3RuOW1kcjFkMGlWY3F6d0JDNmQ3dGJYYXBPbWFwaw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+IATER+RR+primeiro+edital+para+efetivos+é+anunciado++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+IATER+RR+primeiro+edital+para+efetivos+é+anunciado++Blog+Gran+Cursos+Online" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 17:22:19 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5zWjhfZ1F4Q0lRUGt5RWVBYmpqZVBUUTJKemFER2hRQXVmd204MktPSlVPZTVCRW9YR1E1MGx6Q3VucEo5OHdTNHctVzgwZHEzNHJIanlsSU9NeTZNd3RuOW1kcjFkMGlWY3F6d0JDNmQ3dGJYYXBPbWFwaw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+IATER+RR+primeiro+edital+para+efetivos+é+anunciado++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+IATER+RR+primeiro+edital+para+efetivos+é+anunciado++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso Prefeitura Viana (ES): inscrições encerradas - Estratégia Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 23:49:27 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBDRG5hdUZJSUtYLXhDYm8zU0NON0xQTk9lYzZEeV9pZ1hxbkxsQjB2eG1jN3BTcmVFTWlEdDBpX2RWdHFfbGo1ZGE1ZmlSSWJPMWN2UV9Jb1NRTXdyMDRuQmxMSUMtVXduSjc3ZXZqVjdDY2VoWTA3RHZR?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 23:49:27 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBDRG5hdUZJSUtYLXhDYm8zU0NON0xQTk9lYzZEeV9pZ1hxbkxsQjB2eG1jN3BTcmVFTWlEdDBpX2RWdHFfbGo1ZGE1ZmlSSWJPMWN2UV9Jb1NRTXdyMDRuQmxMSUMtVXduSjc3ZXZqVjdDY2VoWTA3RHZR?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso Prefeitura Vitória da Conquista: edital de pss; 163 vagas - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 07:29:12 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcWxCWUlCcnlkMXZId2RrRnJrU09pNWVTbE1fU0JUWXoxNFBnVEswd1NTS0JnSmZ1MEdtekkxMW0yV3d5aW1JQWJJbVBUX3BVRkgxMGdkOHJ3YlNrZTMwMDZUdFRwNWtDbGY1Nk51bldhVDRveXhYN2hEdEp6ZXVaaUdIVDV4MVFteDRHbG1B?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Vitória+da+Conquista+edital+de+pss+163+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Vitória+da+Conquista+edital+de+pss+163+vagas++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 07:29:12 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcWxCWUlCcnlkMXZId2RrRnJrU09pNWVTbE1fU0JUWXoxNFBnVEswd1NTS0JnSmZ1MEdtekkxMW0yV3d5aW1JQWJJbVBUX3BVRkgxMGdkOHJ3YlNrZTMwMDZUdFRwNWtDbGY1Nk51bldhVDRveXhYN2hEdEp6ZXVaaUdIVDV4MVFteDRHbG1B?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Vitória+da+Conquista+edital+de+pss+163+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Vitória+da+Conquista+edital+de+pss+163+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Viana Saúde ES: 61 vagas + CR. Inscreva-se! - Estratégia Concursos</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 00:52:32 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE53djBCeHlOa0U0Y2p3WlpMTkd4aXJMTVZCOGVzOFlvVmRoX0Y3OUNMYk1rN2Q3NTl4TGhWU3RrRmk4Tl9kREZZTVJDOTd4a3RZSGdfZENpb0NwTnl0dGdVc0R0MDRmSENZNjFzTmtoSmtBTTJyZnVZ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Viana+Saúde+ES+61+vagas++CR+Inscrevase++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Viana+Saúde+ES+61+vagas++CR+Inscrevase++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso GCM SP: Vunesp é a banca! Serão 500 vagas - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 05:25:36 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE11YzhWZUVoc2xXNVVtbmVTbGstUnQ5Uy04OE1CRllWVVNrdlhIbF82R3laQXBDbmxKSFBVWHFTMFJvQXVZU25fTlZYLThpZ0hnd2dNU1R0Y2xVcjZMUm03QTg4Q2VqYTFxazI0MA?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 05:25:36 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE11YzhWZUVoc2xXNVVtbmVTbGstUnQ5Uy04OE1CRllWVVNrdlhIbF82R3laQXBDbmxKSFBVWHFTMFJvQXVZU25fTlZYLThpZ0hnd2dNU1R0Y2xVcjZMUm03QTg4Q2VqYTFxazI0MA?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Prefeitura de Grão-Pará - SC promove Processo Seletivo para Agente de Apoio Educacional - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:29:39 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOTkNMOHFuU09RNUtDdDZmY2R0TmZnWWE0dVNaYV96dXZHQTF2VFRmeXRuSFgyMmhLNGI4NUduQWl4ZlFLV2FFS25ZMnRFU2dydGlHS0l4aUVQOEtaVlhXMGtZSUZNRG1zb29yWmVRUHRqUGxFeTBZZV9HeklRdTk4NXhlc1oteE44V3BFUVVyUFJfc0d3NlJiLUJwdmlicDl5bnpnSENfN1lraWs3MU5ZY3Q5ckJMY1JycktRcnJ3SzE2bUxF?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+GrãoPará++SC+promove+Processo+Seletivo+para+Agente+de+Apoio+Educacional++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+GrãoPará++SC+promove+Processo+Seletivo+para+Agente+de+Apoio+Educacional++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Patoprev: inscrições abertas! Confira! - diariooficialdf.com.br</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 15:03:21 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5nc3h2MzVJdEFvZWtuN1B1MzBEYy1ZT253SXBHM3A3aGlFUlUxeTVDcE9fUWYySlpjRS16UEFmdlM1c1N6ZW5Db2pCSHFXbk93OVlnaWFwRTRXSEJjZnZnLWRWRQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Patoprev+inscrições+abertas+Confira++diariooficialdfcombr&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Patoprev+inscrições+abertas+Confira++diariooficialdfcombr" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Seletivo 2026 da Prefeitura de Ilhabela SP está com inscrições abertas - JC Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:42:11 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNWEd0cGxUOU5NTFljUnNSSlpuQjNEd2hkay1BWEEwMkFJZ215cVNaNDZaSWNxRmlscE85ZmY3bENBLTlnME1WWUFKdEo0aWVwV1U1NDJwU0tqUlpNdmtRRVVQa1VVd1NIRjZPVG5DVTk4b2ZZLUdxX1BpUm1mRS1ySTFGeV9UWmRNNC1CNE9PaHA4MTM3OXZ6N1pjakVWWkMxVzFrUG1BUUppajFRMkozaUt4OHdnT24zRzc2YlFR?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Seletivo+2026+da+Prefeitura+de+Ilhabela+SP+está+com+inscrições+abertas++JC+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Seletivo+2026+da+Prefeitura+de+Ilhabela+SP+está+com+inscrições+abertas++JC+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso GCM SP: comissão formada; novo edital em breve! - Direção Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:31:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE82MzZZaDVodi14MWJ2bFh2N0tjbXl0UE9kazN6ek9vQVozY2pHNkwxT1FuZUo5RVBsZ0R2TDRZWlFoZEE0THJwbjRaSGxGQURzNkVFdk9FTHZlYlE3LWVib3BxdzItMUdCcGpNT1N4REM2WGZlZG1oV0ZOLUxvMVE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+GCM+SP+comissão+formada+novo+edital+em+breve++Direção+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+GCM+SP+comissão+formada+novo+edital+em+breve++Direção+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Inscrições para concurso da Aeronáutica já estão abertas: confira vagas, salários, requisitos e como se inscrever - Revista Sociedade Militar</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 15:14:29 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOWmRGSDhkMmFaZm1fVWNJbzNhU3NmazdhaFJnY1BkMWlkdWg5VHpxVXlCUTBqcHhoN2YyQ0R3VmpPVDY4dkdVTmIyNC1PVUplYm9Wanh1d05rLVNyYkdDX3MycEE5Ti1SZ19VV0l5RlJWQjJNajh4X2tNMjFLVmc4aTRuLVdwaWkwczVlcVVLOVZybnhwY2Jfd2lpTGMxelZrY1FmRFU0NG5Xd0pmUEE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Inscrições+para+concurso+da+Aeronáutica+já+estão+abertas+confira+vagas+salários+requisitos+e+como+se+inscrever++Revista+Sociedade+Militar&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Inscrições+para+concurso+da+Aeronáutica+já+estão+abertas+confira+vagas+salários+requisitos+e+como+se+inscrever++Revista+Sociedade+Militar" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso da Câmara de Santa Adélia (SP) tem edital publicado com salários acima de R$ 6 mil - JC Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:09:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNTHJHYlNwS2QyZ3puVlFTVFZmNHNudlhjRDhsNTc3N1NmcWhrV3gybEltMjlvenJQRi1LMllJN2l5dmdnS2JtdWEydEF4MWhQYVpJZlNLNk82dkVfaWpvYkZSWUtqbkhFaFh0Yl9aUnB3X05MWUcydUpuOFZuUEZ6WmduRG5zRzVqbWpkYWRWekJDWl9KZ196YlJn0gGaAUFVX3lxTE1MckdiU3BLZDJnem5WUVNUVmY0c252WGNEOGw1Nzc3U2ZxaGtXeDJsSW0yOW96clBGLUsyWUk3aXl2Z2dLYm11YTJ0QXgxaFBhWklmU0s2TzZ2RV9pam9iRlJZS2puSEVoWHRiX1pScHdfTkxZRzJ1Sm44Vm5QRnpaZ25EbnNHNWptamRhZFZ6QkNaX0pnX3piUmc?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+da+Câmara+de+Santa+Adélia+SP+tem+edital+publicado+com+salários+acima+de+R+6+mil++JC+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+da+Câmara+de+Santa+Adélia+SP+tem+edital+publicado+com+salários+acima+de+R+6+mil++JC+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Câmara de Goiânia: veja as principais datas! - Blog Gran Cursos Online</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 12:03:21 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQYzVETmg1MGYwWmluYWJNTzV3dUJ0SDRiSkIxOWs3bXlGaV9EckZEZkhVRzdDdjgyWU9QdlhsbUQxdkNSTFNSRXRLQzBPcHRUaDJSVlpVS28tRU5hbjQtSi1vWEIwTUNEZ2MyZ3cwVWgyZnNYWVkxSWt0Zm5uLUNWVEhVY0R2dDZibmZyWmZtbw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Câmara+de+Goiânia+veja+as+principais+datas++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Câmara+de+Goiânia+veja+as+principais+datas++Blog+Gran+Cursos+Online" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Universidade abre inscrições para concurso com salários de até R$ 13 mil | Zona Sul - GZH</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 13:06:37 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSlQ4OUdOTEZaU0RtY3ZkazRIVUxhblZPZ2s2NUViSXROUTRvZnVpZUxiZUhUTzJYazNHeEl2dHJRcTBOckNjR1JHN0lYX3kxN1JUTDFqQTdVOHpMNV9CZFRMb21SNTJXc205RDBvcDJ2Q1RieU5hSnhnVGh4Q2YtZnlLZk5BXzRGWVp6TXlwNE5UQmFLUjk0b1pVSlAwOU5wcUt0ZGprR1pzM2k1aW5NSks1a2N0VXQ2aVJwNDVxZjRveVVuZ2xmNjJnV2YwLVJ5VE5DREZYLUF4Mzd5RkhTZHAxV0dPbV9QbzNaQld2TklQbHZXTVpXMEpZRFU4emM?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Universidade+abre+inscrições+para+concurso+com+salários+de+até+R+13+mil++Zona+Sul++GZH&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Universidade+abre+inscrições+para+concurso+com+salários+de+até+R+13+mil++Zona+Sul++GZH" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Polícia Científica SC: veja vagas para peritos por área - Folha Dirigida</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 20:05:07 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPTkVfc1FaOWxwYXFMdFVqNmc5VklkU0ZFWlZscE5mODY1aWlJemxYSHdaRlB3aGRyQmNLdGFtd0ZLOGdwZkhUSEJ5ZllpV0R5Tk53b2xaZ2xqVjNTcVFVOUVzZmVFZklLZU9YT2xGQlVrV3k1a1R0N01lUHJCdDYwZ0lFSmdEUkk?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Polícia+Científica+SC+veja+vagas+para+peritos+por+área++Folha+Dirigida&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Polícia+Científica+SC+veja+vagas+para+peritos+por+área++Folha+Dirigida" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Concurso Fundação Osório RJ é aberto; veja como fazer a inscrição - Folha Dirigida</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:56:49 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5yVmxYTkEtQXVPa1VBaFM0SjVLRENZTVVfWEhBdFpWcDAyVnIxODBjampwTEtHYW1QNVRMbHlQSWphV3UyWC1DdmlTM3VJbW15SUFOODRXOVM0dWdsS19UUTFERllJQ3ZIT2h6aFpyY3JFUHF0T2hXUnhhRkdfQQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Fundação+Osório+RJ+é+aberto+veja+como+fazer+a+inscrição++Folha+Dirigida&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Fundação+Osório+RJ+é+aberto+veja+como+fazer+a+inscrição++Folha+Dirigida" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>Edital Belo Horizonte-MG 2026 abre seleção para 3 cargos - Ache Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 08:15:50 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQeW1BaG5aR2tuYll0Yk00M292eXpvMW1nVm1OaHByLWExN0dhTk1zcjh0RXJNNm1pRTZnRV84MjlvblRHWlhJNENsWk9seTY3YjFNX3VVQnRPS0FsWGxnVGsxN2xCUVpyVkxCWjVmcEpzLXNDNkpTUTdDdV9kZXkyQmxrMHNWc1JEZVpNN0p6VUtReVVraTFneVd0ZDE5enYtUjNqM044Uk45VkJnbXVRRWpOZjVLa3dQR1HSAb8BQVVfeXFMUGx3c1JUbkZmdmVBbGoxUkpJeTJWLUpDOUkwazFRS1V5QlYtNF95Vm9oWUg5bEVTcUpaRGptMFZPaXMyT25YRTl0YlAtRE5GYjd1Y3NWZ0J6dnFWQ3VZanF4S1pZSEZPdkE1VExqWHhFS2VvWkh0QklkZ2loRlpJc0l4UzJtaS1rcVNHM25jeVJ2R0VscU55QTFMckdLUU5JazFzeHF2VWdnYjZIeUNsWkY2SVZZVDNCOVkwb193RkE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Edital+Belo+HorizonteMG+2026+abre+seleção+para+3+cargos++Ache+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Edital+Belo+HorizonteMG+2026+abre+seleção+para+3+cargos++Ache+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
-        <h3>IFB lança abertura de edital de Processo Seletivo - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 20:16:34 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQTDh0T3BockNqLUhXZ2VTSndYQzY0YWFKb3ZPMVhXWXI0aFd1cVB5VjRQcDA3czFvZFZJOV9sTmhCOW1JMHJzTldjeUZCQVFmLWpOWGd6U2NqazhXX0VCU05Nc1h0czhKYmNrSTA0UGRrMk5wMEx3RFFiSnQ5Z1JxdHVuVDdsVHU4VUh2SnZ5R1d0LTUt?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+IFB+lança+abertura+de+edital+de+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20IFB+lança+abertura+de+edital+de+Processo+Seletivo++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso ADAB: edital iminente com 200 vagas; veja quando sai - Estratégia Concursos</h3>
-        <p>Publicado em: Sat, 10 Jan 2026 02:43:49 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5lcDBzWC15cF92TnFVM3cxTHZjcEk4UV9OTHdyWU4xYXpRYkdQTkNsdlRveFpKSTVtNmRJT1h5ekJyM0FPUlZIREs5QVVxam5YRjJlR2wtYTMyV05hczZOc3pvbkc3N3JnZnc?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 02:43:49 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5lcDBzWC15cF92TnFVM3cxTHZjcEk4UV9OTHdyWU4xYXpRYkdQTkNsdlRveFpKSTVtNmRJT1h5ekJyM0FPUlZIREs5QVVxam5YRjJlR2wtYTMyV05hczZOc3pvbkc3N3JnZnc?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Prefeitura de Santa Carmem - MT divulga abertura de Processo Seletivo - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:15:40 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNdUs4S25Va0FfXzNDQWxuTHpoMEVCMDlJZDRGUDAtRTczU2NjcTZDbjdiWERVbjRxaTBpNXliRk5qelVxaVpyMEtPQWxUMXZJYnlhUjlwTmtTZ0tTaVhNWjlIN2ZMQWFXV0VQZGlNbnFJLXNIZWtuakY1LUR4S2p5LU13UVJEUFA4WGROR3pFb05fQ25nN2tWdVZJcUdtOEltYWpoQTFWS1dSYnFs?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+Santa+Carmem++MT+divulga+abertura+de+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+Santa+Carmem++MT+divulga+abertura+de+Processo+Seletivo++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Edital Ibiam-SC 2026: Concurso abre 13 vagas de até R$ 7.627 - Ache Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 15:23:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxONTV4SHVSeFJrZENra3NKbDc1UjliMWZqZ3NhNkZOdWZXTnVnQ0NWUVJUQzVLaDhmOGZHYzdteXY5RWJDM3k1dzN4eFBBUDJEeU9rZF9TUXcySEhFb1pyc09Ma0o5cU9yUXIwd05kRHVMZXYzV1NhY1dpLThhLTllem9jYmd2b093eG9NTzdXc3gtZlZmQURTS2wwOGN5SExMWW1Md1lubkZzNnpNMnFSWEo5a9IBuAFBVV95cUxPdG9JejhPNklISUluanFtWXlBOTZZVUdJbUl0SEx1UXB1b1lWN0VWRVdmQ0pGcldwRG9DYUlrSWVCNVY0bTB1Y0t2TXI4alRYc21ES1hORFJtaVFqdFVraGxkYkZ3OFVtMkpxVUVQa3JZaUNsWDVaMUhxVlhpZExfX3pkdkFGWEJyQVpBc2tJSVdlUndBY1I2RnBuWjV5bE1mWi1RM25QaE9XSkJMS2RvVEdaWTJBb09f?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Edital+IbiamSC+2026+Concurso+abre+13+vagas+de+até+R+7627++Ache+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Edital+IbiamSC+2026+Concurso+abre+13+vagas+de+até+R+7627++Ache+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Concurso público da Prefeitura de Lavras oferece 169 vagas para níveis médio, técnico e superior - Lavras24horas</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 19:36:01 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQV29CNXNGbFdmeUZVLXlPSmFHeFBWSDc3MmhsbkhzcXNlRGNrZVpDd3FSdDFaU0Zabi1MOXJkOFRGZUl4azhhZkJUekhoWndXelVvSG9mM0hRc2ZhRzl3OU5LM2VrNnJhTXdjUVVaSmlaemNyVklBMlc5VEtSU3dwdzNDZm9JNFE1aVpnQ1ExSEFOeTNmRGZ4VDlyS1d1NjVVNE1Ed21ISklOblpzRGQzSEF0R3ZFR3N1a08wTE5RYjVDMnBJUHMxbERmcUd1YWpiOUE?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+público+da+Prefeitura+de+Lavras+oferece+169+vagas+para+níveis+médio+técnico+e+superior++Lavras24horas&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+público+da+Prefeitura+de+Lavras+oferece+169+vagas+para+níveis+médio+técnico+e+superior++Lavras24horas" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Patoprev: inscrições abertas! Confira! - diariooficialdf.com.br</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 15:03:21 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5nc3h2MzVJdEFvZWtuN1B1MzBEYy1ZT253SXBHM3A3aGlFUlUxeTVDcE9fUWYySlpjRS16UEFmdlM1c1N6ZW5Db2pCSHFXbk93OVlnaWFwRTRXSEJjZnZnLWRWRQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Patoprev+inscrições+abertas+Confira++diariooficialdfcombr&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Patoprev+inscrições+abertas+Confira++diariooficialdfcombr" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>UDESC divulga Concurso Público com 40 vagas - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 16:33:25 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQQWppQmJfM0lNY0RjNFlyV0xsSWJBX1NrOEZqOGp2Mk1TT0N2X3U3NE16WUk3UDFkX0lPam80Q0M1ODkxVkhBZ21iLTlJajFwXzE0RTlUclZSSXdVLTMzckNFZTd6eWFxTXVqSjVqT0NDZFNTOUhCcEduczNWd2NLQmpYdWxHQ0tISVQyZQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+UDESC+divulga+Concurso+Público+com+40+vagas++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20UDESC+divulga+Concurso+Público+com+40+vagas++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Prefeitura de Grão-Pará - SC promove Processo Seletivo para Agente de Apoio Educacional - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:29:39 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOTkNMOHFuU09RNUtDdDZmY2R0TmZnWWE0dVNaYV96dXZHQTF2VFRmeXRuSFgyMmhLNGI4NUduQWl4ZlFLV2FFS25ZMnRFU2dydGlHS0l4aUVQOEtaVlhXMGtZSUZNRG1zb29yWmVRUHRqUGxFeTBZZV9HeklRdTk4NXhlc1oteE44V3BFUVVyUFJfc0d3NlJiLUJwdmlicDl5bnpnSENfN1lraWs3MU5ZY3Q5ckJMY1JycktRcnJ3SzE2bUxF?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+GrãoPará++SC+promove+Processo+Seletivo+para+Agente+de+Apoio+Educacional++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+GrãoPará++SC+promove+Processo+Seletivo+para+Agente+de+Apoio+Educacional++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Prefeitura de Belo Horizonte - MG anuncia 47 vagas em novo Processo Seletivo - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:40:53 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNYm9aMEdZQTNyeEg5eEhJMmo4XzV0ZVZkeFlfbFdqYnU2aGRJU0RnUm9jTXgzT2N5LUJuVzFIbUhuaUdicTUtdl9oZ3puN05fcmxmTUJ5VjR6U1J3RVp0bFZldl9HbEUzamcwMEI2TnF3SWI1SDdYT1FnaTZLRTczT0ZITTZsLVFrQ2lYaWNtdUVFa0Y3ZFVPY2xscFB0Z1VXX0J4b3paTGtCeHJxNE1GdnlGZFZ5dw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+Belo+Horizonte++MG+anuncia+47+vagas+em+novo+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+Belo+Horizonte++MG+anuncia+47+vagas+em+novo+Processo+Seletivo++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso da Câmara de Santa Adélia (SP) tem edital publicado com salários acima de R$ 6 mil - JC Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:09:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPbVQyRGZfNVREZnRiUVVIZWhNOC04UjBuajRaVGs5eUFMbWJ1R2VCcWNvRXdKRER1YkZETW9xaU1FOXpPNnEwaG1mVHdKMzh1MVVYcnpDTUZzc1dUd2ZzdnpBYmdQV1psZGdRQjVucmZOUHVuOUR4Y21KVGZFREZFZzhiZ19lRFlrblN0bDhnck41Vk5s?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+da+Câmara+de+Santa+Adélia+SP+tem+edital+publicado+com+salários+acima+de+R+6+mil++JC+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+da+Câmara+de+Santa+Adélia+SP+tem+edital+publicado+com+salários+acima+de+R+6+mil++JC+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>UEMG publica cinco Processos Seletivos para Analistas e Técnicos Universitários - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 21:06:36 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOUDdYeWpyZ2FRTUZRSUNzUkQ0VU9qX0dRQTNSZks3VC00UFpoVFVkS3NQV3ZnMEFaSEhkNHI3SzRQZHF5aTdvS3ltV2FmVDQwRmpKWWhEWTBvdk5tLTBrZ2hqcUZ2QXFXdlJrcVRLMFVUV25XbkdaU3ZLc0ZDMXZRdk5PODd6MzItOWRKNE9uQmQ0aE8wOUJvRkl3Y0YtSFNRTDl6eDZsYUtyYjEyN3FDWktGODF3V2ZzcWRTSQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+UEMG+publica+cinco+Processos+Seletivos+para+Analistas+e+Técnicos+Universitários++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20UEMG+publica+cinco+Processos+Seletivos+para+Analistas+e+Técnicos+Universitários++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Inscrições para concurso da Aeronáutica já estão abertas: confira vagas, salários, requisitos e como se inscrever - Revista Sociedade Militar</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 15:14:29 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOWmRGSDhkMmFaZm1fVWNJbzNhU3NmazdhaFJnY1BkMWlkdWg5VHpxVXlCUTBqcHhoN2YyQ0R3VmpPVDY4dkdVTmIyNC1PVUplYm9Wanh1d05rLVNyYkdDX3MycEE5Ti1SZ19VV0l5RlJWQjJNajh4X2tNMjFLVmc4aTRuLVdwaWkwczVlcVVLOVZybnhwY2Jfd2lpTGMxelZrY1FmRFU0NG5Xd0pmUEE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Inscrições+para+concurso+da+Aeronáutica+já+estão+abertas+confira+vagas+salários+requisitos+e+como+se+inscrever++Revista+Sociedade+Militar&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Inscrições+para+concurso+da+Aeronáutica+já+estão+abertas+confira+vagas+salários+requisitos+e+como+se+inscrever++Revista+Sociedade+Militar" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Santa Cruz da Esperança (SP) lança oportunidades para diferentes cargos - Concursos no Brasil</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 20:19:50 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRktnVXpULTAzdXVPelFMdDZYU2ppUjNYZ0gwTi1yUUVDa3lqRVBuTEpOaTRraVhnSEY3Q1ZzNXFhSFlWT2pqUkRUWVV4NkR4b3p0ZVVSWElHV3lmcnlnNmVBYlQtbG9Fb2R1a0R0YlUyNFVJLUlFTXQzNTYtVGpJUFJiSkNBOUp6dWp4V2JLR3g3UzNHTVV4bVhUZUZJU0o5SElaYkRpMVlteHFUdV9KWUhhQ25vWGE2Yk9vcTFTOUNPUQ?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Santa+Cruz+da+Esperança+SP+lança+oportunidades+para+diferentes+cargos++Concursos+no+Brasil&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Santa+Cruz+da+Esperança+SP+lança+oportunidades+para+diferentes+cargos++Concursos+no+Brasil" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
-    </div>
-    
-    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso em Campos com 1.000 vagas: continuam abertas as inscrições para a Educação - Campos 24 Horas</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 14:07:00 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPRVlqN0duTGRHdlhyelVNWkFfbW5sSVF1U21WX25OVGYzb21sQ1lSRkJCX3RTRUp1MWU0X2MtWkk2SXlEUWJXVTFlVWFiNDg4T2RyZGFtaXd6UjllbzB6ZHhfZmtjdTdWM2d4Mml5TlFIVUFrSHMtbzhuaWVrbFYtd1podGhEMXpkSGlrTURpbm5qRXFCbEh1Wm5NZjZySjl2S3R6ZFpDXzA3MFpUUDI0blBR?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+em+Campos+com+1000+vagas+continuam+abertas+as+inscrições+para+a+Educação++Campos+24+Horas&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+em+Campos+com+1000+vagas+continuam+abertas+as+inscrições+para+a+Educação++Campos+24+Horas" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:07:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPRVlqN0duTGRHdlhyelVNWkFfbW5sSVF1U21WX25OVGYzb21sQ1lSRkJCX3RTRUp1MWU0X2MtWkk2SXlEUWJXVTFlVWFiNDg4T2RyZGFtaXd6UjllbzB6ZHhfZmtjdTdWM2d4Mml5TlFIVUFrSHMtbzhuaWVrbFYtd1podGhEMXpkSGlrTURpbm5qRXFCbEh1Wm5NZjZySjl2S3R6ZFpDXzA3MFpUUDI0blBR?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+em+Campos+com+1000+vagas+continuam+abertas+as+inscrições+para+a+Educação++Campos+24+Horas&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+em+Campos+com+1000+vagas+continuam+abertas+as+inscrições+para+a+Educação++Campos+24+Horas" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Câmara de Goiânia: veja as principais datas! - Blog Gran Cursos Online</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 12:03:21 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQYzVETmg1MGYwWmluYWJNTzV3dUJ0SDRiSkIxOWs3bXlGaV9EckZEZkhVRzdDdjgyWU9QdlhsbUQxdkNSTFNSRXRLQzBPcHRUaDJSVlpVS28tRU5hbjQtSi1vWEIwTUNEZ2MyZ3cwVWgyZnNYWVkxSWt0Zm5uLUNWVEhVY0R2dDZibmZyWmZtbw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Câmara+de+Goiânia+veja+as+principais+datas++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Câmara+de+Goiânia+veja+as+principais+datas++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Universidade abre inscrições para concurso com salários de até R$ 13 mil | Zona Sul - GZH</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 13:06:37 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSlQ4OUdOTEZaU0RtY3ZkazRIVUxhblZPZ2s2NUViSXROUTRvZnVpZUxiZUhUTzJYazNHeEl2dHJRcTBOckNjR1JHN0lYX3kxN1JUTDFqQTdVOHpMNV9CZFRMb21SNTJXc205RDBvcDJ2Q1RieU5hSnhnVGh4Q2YtZnlLZk5BXzRGWVp6TXlwNE5UQmFLUjk0b1pVSlAwOU5wcUt0ZGprR1pzM2k1aW5NSks1a2N0VXQ2aVJwNDVxZjRveVVuZ2xmNjJnV2YwLVJ5VE5DREZYLUF4Mzd5RkhTZHAxV0dPbV9QbzNaQld2TklQbHZXTVpXMEpZRFU4emM?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Universidade+abre+inscrições+para+concurso+com+salários+de+até+R+13+mil++Zona+Sul++GZH&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Universidade+abre+inscrições+para+concurso+com+salários+de+até+R+13+mil++Zona+Sul++GZH" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Polícia Científica SC: veja vagas para peritos por área - Folha Dirigida</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 20:05:07 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPTkVfc1FaOWxwYXFMdFVqNmc5VklkU0ZFWlZscE5mODY1aWlJemxYSHdaRlB3aGRyQmNLdGFtd0ZLOGdwZkhUSEJ5ZllpV0R5Tk53b2xaZ2xqVjNTcVFVOUVzZmVFZklLZU9YT2xGQlVrV3k1a1R0N01lUHJCdDYwZ0lFSmdEUkk?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Polícia+Científica+SC+veja+vagas+para+peritos+por+área++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Polícia+Científica+SC+veja+vagas+para+peritos+por+área++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Edital Belo Horizonte-MG 2026 abre seleção para 3 cargos - Ache Concursos</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 08:15:50 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQeW1BaG5aR2tuYll0Yk00M292eXpvMW1nVm1OaHByLWExN0dhTk1zcjh0RXJNNm1pRTZnRV84MjlvblRHWlhJNENsWk9seTY3YjFNX3VVQnRPS0FsWGxnVGsxN2xCUVpyVkxCWjVmcEpzLXNDNkpTUTdDdV9kZXkyQmxrMHNWc1JEZVpNN0p6VUtReVVraTFneVd0ZDE5enYtUjNqM044Uk45VkJnbXVRRWpOZjVLa3dQR1HSAb8BQVVfeXFMUGx3c1JUbkZmdmVBbGoxUkpJeTJWLUpDOUkwazFRS1V5QlYtNF95Vm9oWUg5bEVTcUpaRGptMFZPaXMyT25YRTl0YlAtRE5GYjd1Y3NWZ0J6dnFWQ3VZanF4S1pZSEZPdkE1VExqWHhFS2VvWkh0QklkZ2loRlpJc0l4UzJtaS1rcVNHM25jeVJ2R0VscU55QTFMckdLUU5JazFzeHF2VWdnYjZIeUNsWkY2SVZZVDNCOVkwb193RkE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Edital+Belo+HorizonteMG+2026+abre+seleção+para+3+cargos++Ache+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Edital+Belo+HorizonteMG+2026+abre+seleção+para+3+cargos++Ache+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Fundação Osório RJ é aberto; veja como fazer a inscrição - Folha Dirigida</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 14:56:49 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5yVmxYTkEtQXVPa1VBaFM0SjVLRENZTVVfWEhBdFpWcDAyVnIxODBjampwTEtHYW1QNVRMbHlQSWphV3UyWC1DdmlTM3VJbW15SUFOODRXOVM0dWdsS19UUTFERllJQ3ZIT2h6aFpyY3JFUHF0T2hXUnhhRkdfQQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Fundação+Osório+RJ+é+aberto+veja+como+fazer+a+inscrição++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Fundação+Osório+RJ+é+aberto+veja+como+fazer+a+inscrição++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso Sefaz GO: estude com aulas gratuitas! - Blog Gran Cursos Online</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 19:41:10 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOR0tvWFZsN2dhSEhsMWozeTNrbjZvUE5kY0UtbFFHQ3BNVFk0R3JWOTJZakhsczRtRjFERWhkTHpMRzJXT1IwdDVISVJyTDgxbjZNc2tEYkJvTktNRnBreklJQWlCamdNb0s1cENvNjNUMDIwSEE0ejBSUmkyYnNPMjY2V216UQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Sefaz+GO+estude+com+aulas+gratuitas++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Sefaz+GO+estude+com+aulas+gratuitas++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>IFB lança abertura de edital de Processo Seletivo - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 20:16:34 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQTDh0T3BockNqLUhXZ2VTSndYQzY0YWFKb3ZPMVhXWXI0aFd1cVB5VjRQcDA3czFvZFZJOV9sTmhCOW1JMHJzTldjeUZCQVFmLWpOWGd6U2NqazhXX0VCU05Nc1h0czhKYmNrSTA0UGRrMk5wMEx3RFFiSnQ5Z1JxdHVuVDdsVHU4VUh2SnZ5R1d0LTUt?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+IFB+lança+abertura+de+edital+de+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20IFB+lança+abertura+de+edital+de+Processo+Seletivo++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Prefeitura de Santa Cruz da Esperança - SP divulga abertura de Processo Seletivo - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Sat, 10 Jan 2026 02:27:24 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOC1TQ3gzdVg2cmVPLTVZN1Q3U0VTNzNmd29vTXczNTdFeGc4OHVvLVZodW9TODJrZGNUM0tLOXA3XzVabDNhazV3Z1VoT1FyeFRLakRHV3kyNkM4bmdmamJncVFSTDV3ZWQ0RlAtZndMd3JMNHRZclhqbk5NQjdvTkdqZHBwN1M5TmlFUDBqUUxSNHRQNHF0VjR3dWt3bVVkYlFxNWhibG5zNGEwbWM5eldfbkNSOGxVRUdZ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+Santa+Cruz+da+Esperança++SP+divulga+abertura+de+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+Santa+Cruz+da+Esperança++SP+divulga+abertura+de+Processo+Seletivo++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>UEMA divulga dois Processos Seletivos para cargo de Professor Substituto - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 18:28:33 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNNnlIMDIxWUhWQ19BTlZzQUFXbFphWGE0N1E5LUJhQzI4UnROSWpkYVVseFlOdVpPNHliSGxIR09fMWhyU2owY3VKSGp5b2JTZjhFaGpKaE5wUkFCOFZHSm1FVS1qSm5oNlBIcFRUVWVTdGhvZi11OTlrQTlTUmpFam92QkpleWIwY3Bud3I0REhScEJXaVBCN3ltZEE5YVdRQ0p5a1hpSnNveUxTSDNqdFFlMA?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+UEMA+divulga+dois+Processos+Seletivos+para+cargo+de+Professor+Substituto++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20UEMA+divulga+dois+Processos+Seletivos+para+cargo+de+Professor+Substituto++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Prefeitura de Porto Amazonas - PR prorroga inscrições do Processo Seletivo - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 19:12:59 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQMEM3VGhsaFVmeE1GTXltcXhoUW1pVUtoSmJMSnNWVnlKTEZ0YUZoel93cU0yNXlvSmZsWTdmdVpWVjVDZ2piNHZNNXNFenBYZ01SYWk4N3paakV2NjQtbnB0Z3UwbEVkUlMzNmFVUjlZbUhZR3JFSzBPVlpqNDBNekluakg1dlZkWWt0b2ZTaU5lRWhWTVZ0NUtxNkVQTjA5Q0ZlS1RGZjItd0dBMGJUbXAtQQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Prefeitura+de+Porto+Amazonas++PR+prorroga+inscrições+do+Processo+Seletivo++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Prefeitura+de+Porto+Amazonas++PR+prorroga+inscrições+do+Processo+Seletivo++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso público da Prefeitura de Lavras oferece 169 vagas para níveis médio, técnico e superior - Lavras24horas</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 19:36:01 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQV29CNXNGbFdmeUZVLXlPSmFHeFBWSDc3MmhsbkhzcXNlRGNrZVpDd3FSdDFaU0Zabi1MOXJkOFRGZUl4azhhZkJUekhoWndXelVvSG9mM0hRc2ZhRzl3OU5LM2VrNnJhTXdjUVVaSmlaemNyVklBMlc5VEtSU3dwdzNDZm9JNFE1aVpnQ1ExSEFOeTNmRGZ4VDlyS1d1NjVVNE1Ed21ISklOblpzRGQzSEF0R3ZFR3N1a08wTE5RYjVDMnBJUHMxbERmcUd1YWpiOUE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+público+da+Prefeitura+de+Lavras+oferece+169+vagas+para+níveis+médio+técnico+e+superior++Lavras24horas&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+público+da+Prefeitura+de+Lavras+oferece+169+vagas+para+níveis+médio+técnico+e+superior++Lavras24horas" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>UDESC divulga Concurso Público com 40 vagas - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 16:33:25 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQQWppQmJfM0lNY0RjNFlyV0xsSWJBX1NrOEZqOGp2Mk1TT0N2X3U3NE16WUk3UDFkX0lPam80Q0M1ODkxVkhBZ21iLTlJajFwXzE0RTlUclZSSXdVLTMzckNFZTd6eWFxTXVqSjVqT0NDZFNTOUhCcEduczNWd2NLQmpYdWxHQ0tISVQyZQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+UDESC+divulga+Concurso+Público+com+40+vagas++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20UDESC+divulga+Concurso+Público+com+40+vagas++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>IFPR lança novo Processo Seletivo no Campus Telêmaco Borba - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 15:46:37 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNbVZ1M0VHUENrSUtzR0FHNUlRSlI3eTBuSllNMHg5Z0tJQnY1aE93REpJNC1ESFB5VEp1emNSb3dUdGx1NDRRbWhhZVlqRVFlUGh4dFEyck0zVklaeDhydnAxS2ZiYmZXbXM3eWV3Yk9qQ1pKb1AxcV8tLTQ2ZGE3Vk9kSVlZTHF1Qlg2QXNVS2pUOFNKaG9sQjVPckphVUV2?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+IFPR+lança+novo+Processo+Seletivo+no+Campus+Telêmaco+Borba++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20IFPR+lança+novo+Processo+Seletivo+no+Campus+Telêmaco+Borba++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>UEMG publica cinco Processos Seletivos para Analistas e Técnicos Universitários - PCI Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 21:06:36 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOUDdYeWpyZ2FRTUZRSUNzUkQ0VU9qX0dRQTNSZks3VC00UFpoVFVkS3NQV3ZnMEFaSEhkNHI3SzRQZHF5aTdvS3ltV2FmVDQwRmpKWWhEWTBvdk5tLTBrZ2hqcUZ2QXFXdlJrcVRLMFVUV25XbkdaU3ZLc0ZDMXZRdk5PODd6MzItOWRKNE9uQmQ0aE8wOUJvRkl3Y0YtSFNRTDl6eDZsYUtyYjEyN3FDWktGODF3V2ZzcWRTSQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+UEMG+publica+cinco+Processos+Seletivos+para+Analistas+e+Técnicos+Universitários++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20UEMG+publica+cinco+Processos+Seletivos+para+Analistas+e+Técnicos+Universitários++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Santa Cruz da Esperança (SP) lança oportunidades para diferentes cargos - Concursos no Brasil</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 20:19:50 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRktnVXpULTAzdXVPelFMdDZYU2ppUjNYZ0gwTi1yUUVDa3lqRVBuTEpOaTRraVhnSEY3Q1ZzNXFhSFlWT2pqUkRUWVV4NkR4b3p0ZVVSWElHV3lmcnlnNmVBYlQtbG9Fb2R1a0R0YlUyNFVJLUlFTXQzNTYtVGpJUFJiSkNBOUp6dWp4V2JLR3g3UzNHTVV4bVhUZUZJU0o5SElaYkRpMVlteHFUdV9KWUhhQ25vWGE2Yk9vcTFTOUNPUQ?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Santa+Cruz+da+Esperança+SP+lança+oportunidades+para+diferentes+cargos++Concursos+no+Brasil&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Santa+Cruz+da+Esperança+SP+lança+oportunidades+para+diferentes+cargos++Concursos+no+Brasil" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Detran convocará pessoas de nível médio e superior com salários de até R$ 10 mil em novo concurso com 1.000 vagas; inscrições serão online, abertas a todo o Brasil e começam nos próximos dias - CPG Click Petróleo e Gás</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 19:40:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiyAJBVV95cUxOUlNDNVMtdmZJTTRnSi1QNUZUZXZBcjF1YTh6YndWdFd1OVNmT3hwQ09ERkRFUzVtQ295aHVxck1wbmZJazk1clVDOVUxZk9kLUwxT3BMbGI2enZENHFyQS13dWFNeW5zV0RIQWpYR2FMalJ0dkYyVkVwcjFaaTJDN003Si1ObVdDam5EdDhGeTZpeER1aTdDd1BTNk5uUlZqeG1PTkQtMWlia1NRVmtYZDhPTld2TjhCREZ6NjdvUkJ4bGdZUEc1dTNVMmNaNHRmWmtmMlI3SEphNjVudERnNXFwZnJVb2xwMkU3OFNfdHBwSkk0aU9QRy1yQktRaDJSWjktT1M3TVYtS3NMUGpBNXUzeEpOa1BqVUQ2QVdzUHl0SnVEYzUzMndzTFF5RVFtV21KQlpzZ25VR3FuZVNzcHI4WnNQUTBO?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Detran+convocará+pessoas+de+nível+médio+e+superior+com+salários+de+até+R+10+mil+em+novo+concurso+com+1000+vagas+inscrições+serão+online+abertas+a+todo+o+Brasil+e+começam+nos+próximos+dias++CPG+Click+Petróleo+e+Gás&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Detran+convocará+pessoas+de+nível+médio+e+superior+com+salários+de+até+R+10+mil+em+novo+concurso+com+1000+vagas+inscrições+serão+online+abertas+a+todo+o+Brasil+e+começam+nos+próximos+dias++CPG+Click+Petróleo+e+Gás" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
+        <h3>Azul oferta 58 vagas de emprego - JC Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 18:15:00 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxObXhxSjlTRmQzMTN3eHJibGdtaFJoZHplZHBSaGpIR24yR1d1aEU3RU45ek52dHZ1aE95NDFqZ3dmWnhPdXhfWTBkR0RNR0tEYlF0Wno1NW9IQ3BYZHlMVnNCNG00U3NoWDlDaWstR0V1RUJTRTJTRmhPSjM5cmFaMkN0RXZWQdIBiwFBVV95cUxNd1d3eHpTVjRTZXdGYWwya0lGZDZYbGxBUUFYSWhiX3ZuU19PbVVqWkhZY2lwSWZWNzJnVlRRY3haSEFRMFZUN1dMZV9MOExneHNUdkU2OTRXQUZCc3FTNnI0NGF5YXFtX3phSFd6aGdFem9kMHNaM0ppbTlhaFd2MjI0ZHZaemVLNk1z?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Azul+oferta+58+vagas+de+emprego++JC+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Azul+oferta+58+vagas+de+emprego++JC+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso da Prefeitura de Campinas SP: últimos dias de inscrição - JC Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 16:47:51 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUhjSWxUeHhxd3gtc05uaEFPV2ZzVnFaaXo4UXFHWmc2TTktOGl2TEd3cW9haGtrMDBqQnhMX2JBZW4yajdFWHE1V0FwTU1ZdkpDUEd4a0lPMEN3YnBZY0hXSEhGbzJPLTZOWExaZlE4dkpub2J4eUxMOF95QVBCTk1lZzkteTJsbzBtSHdrN3JSLXczczBOb1Rqa0RXVDJMU3FFcnlESWItZnRtd1dBNmVsbks3ZUwwOF9z0gG7AUFVX3lxTE5JSGNJbFR4eHF3eC1zTm5oQU9XZnNWcVppejhRcUdaZzZNOS04aXZMR3dxb2Foa2swMGpCeExfYkFlbjJqN0VYcTVXQXBNTVl2SkNQR3hrSU8wQ3dicFljSFdISEZvMk8tNk5YTFpmUTh2Sm5vYnh5TEw4X3lBUEJOTWVnOS15MmxvMG1Id2s3clItdzNzME5vVGprRFdUMkxTcUVyeURJYi1mdG13V0E2ZWxuSzdlTDA4X3M?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+da+Prefeitura+de+Campinas+SP+últimos+dias+de+inscrição++JC+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+da+Prefeitura+de+Campinas+SP+últimos+dias+de+inscrição++JC+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 16:47:51 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUhjSWxUeHhxd3gtc05uaEFPV2ZzVnFaaXo4UXFHWmc2TTktOGl2TEd3cW9haGtrMDBqQnhMX2JBZW4yajdFWHE1V0FwTU1ZdkpDUEd4a0lPMEN3YnBZY0hXSEhGbzJPLTZOWExaZlE4dkpub2J4eUxMOF95QVBCTk1lZzkteTJsbzBtSHdrN3JSLXczczBOb1Rqa0RXVDJMU3FFcnlESWItZnRtd1dBNmVsbks3ZUwwOF9z0gG7AUFVX3lxTE5JSGNJbFR4eHF3eC1zTm5oQU9XZnNWcVppejhRcUdaZzZNOS04aXZMR3dxb2Foa2swMGpCeExfYkFlbjJqN0VYcTVXQXBNTVl2SkNQR3hrSU8wQ3dicFljSFdISEZvMk8tNk5YTFpmUTh2Sm5vYnh5TEw4X3lBUEJOTWVnOS15MmxvMG1Id2s3clItdzNzME5vVGprRFdUMkxTcUVyeURJYi1mdG13V0E2ZWxuSzdlTDA4X3M?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+da+Prefeitura+de+Campinas+SP+últimos+dias+de+inscrição++JC+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+da+Prefeitura+de+Campinas+SP+últimos+dias+de+inscrição++JC+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Ufop abre edital de Processo Seletivo para cargo de Professor - PCI Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 15:46:26 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWpEUXd4cDRxVmw2NmtrcWJyOHp4UUpPd2JDTFpCdk0zWVV5NUZZQ1A5N1M0M20ta0owbXV1QTF5RWpQem1TZDZVU3Q1S3Z5b3daRkxmcWh6cEdwTlN5RVlLQmdtVldiZG9PcjN1MVRrbXB2RUl0WFotV2F1b0ZNc3FxelZ0b0tHWnBQSDFyanVmRjMtVERnUXVqVlp6UWZzSFU1Sw?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Ufop+abre+edital+de+Processo+Seletivo+para+cargo+de+Professor++PCI+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Ufop+abre+edital+de+Processo+Seletivo+para+cargo+de+Professor++PCI+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 15:46:26 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWpEUXd4cDRxVmw2NmtrcWJyOHp4UUpPd2JDTFpCdk0zWVV5NUZZQ1A5N1M0M20ta0owbXV1QTF5RWpQem1TZDZVU3Q1S3Z5b3daRkxmcWh6cEdwTlN5RVlLQmdtVldiZG9PcjN1MVRrbXB2RUl0WFotV2F1b0ZNc3FxelZ0b0tHWnBQSDFyanVmRjMtVERnUXVqVlp6UWZzSFU1Sw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Ufop+abre+edital+de+Processo+Seletivo+para+cargo+de+Professor++PCI+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Ufop+abre+edital+de+Processo+Seletivo+para+cargo+de+Professor++PCI+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>São Miguel do Araguaia abre seleção com 250 vagas e salários de até R$ 13,6 mil - Portal iG</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 16:51:19 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUVJPN0xNeWRwaDFmWWhqbjM3c1RuY0xDNVdxXzhNeWYwM2YwMWVOdG9FYXlELWdsd0lEVVhBd1BpU1F2Sm56UmpPZEpGTTNYaFQ5U2Vuck83MFlvMkRZRFJVTUppTEVVeUN4eGR3S1BSWTRfN0Uyc3pNUjI5NGh2TkhZQ2xOVU5TV3J0WjI4NWRMQ1ZJUVF0Q3lsUHhoQlZQVWZfVDFndGRwbVluNGdLQm8xcG5iTXZO?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+São+Miguel+do+Araguaia+abre+seleção+com+250+vagas+e+salários+de+até+R+136+mil++Portal+iG&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20São+Miguel+do+Araguaia+abre+seleção+com+250+vagas+e+salários+de+até+R+136+mil++Portal+iG" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 16:51:19 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUVJPN0xNeWRwaDFmWWhqbjM3c1RuY0xDNVdxXzhNeWYwM2YwMWVOdG9FYXlELWdsd0lEVVhBd1BpU1F2Sm56UmpPZEpGTTNYaFQ5U2Vuck83MFlvMkRZRFJVTUppTEVVeUN4eGR3S1BSWTRfN0Uyc3pNUjI5NGh2TkhZQ2xOVU5TV3J0WjI4NWRMQ1ZJUVF0Q3lsUHhoQlZQVWZfVDFndGRwbVluNGdLQm8xcG5iTXZO?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+São+Miguel+do+Araguaia+abre+seleção+com+250+vagas+e+salários+de+até+R+136+mil++Portal+iG&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20São+Miguel+do+Araguaia+abre+seleção+com+250+vagas+e+salários+de+até+R+136+mil++Portal+iG" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
-        <h3>Concurso da Prefeitura de Santa Isabel SP abre 152 vagas para 57 cargos - JC Concursos</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 13:26:26 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGt2d29JaUw4T3RMMUJjdndCNkpNUEEwYnMwSEdQTjZtdjdLWk1Ndkd6S0I5ZnR4NDRJNnNwb2Q4dnBCYzRWVEtFRUgtQkdlQmVSclc1Z0VocUFiSUxwOXF3SUZob2JBR2tab2FReUxGYzRfSHh5OVIzVWl2RXczZG0wVWdSSnFSYWlhdWRFXzlVQ2hiLTZmOV9ycDU5a3V4ZTRMQ3lxajRncEHSAasBQVVfeXFMTVBrdndvSWlMOE90TDFCY3Z3QjZKTVBBMGJzMEhHUE42bXY3S1pNTXZHektCOWZ0eDQ0STZzcG9kOHZwQmM0VlRLRUVILUJHZUJlUnJXNWdFaHFBYklMcDlxd0lGaG9iQUdrWm9hUXlMRmM0X0h4eTlSM1VpdkV3M2RtMFVnUkpxUmFpYXVkRV85VUNoYi02ZjlfcnA1OWt1eGU0TEN5cWo0Z3BB?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+da+Prefeitura+de+Santa+Isabel+SP+abre+152+vagas+para+57+cargos++JC+Concursos&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+da+Prefeitura+de+Santa+Isabel+SP+abre+152+vagas+para+57+cargos++JC+Concursos" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <span class="tag">NOVIDADE</span>
+        <h3>Concurso ADAB BA: edital para 200 vagas pode sair na próxima semana - JC Concursos</h3>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 16:24:14 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQSU1hb0xtMUNPVWZsc1U1VVhnVGtTYkdpLUFrUmwteTVPT0lWZjlsckw0bzlaQlR6Vm5kWjJ4aGN0b1dGSTRobGpEUk9ObXIzbkVaRG5rS0pJRFVVM21GdTJ2MnNralhBSDRjYjNyUGRrOVNkdUxZVEJTTTZpLW9oN09oMlI4QkQyT0JQNzZZUHc1RTl2X0tZM1ZyWHZpWDhKNlZRZnM5YWEyOFl5TEo1U1dGbzBoQld1S2drLXhXY9IBvwFBVV95cUxQSU1hb0xtMUNPVWZsc1U1VVhnVGtTYkdpLUFrUmwteTVPT0lWZjlsckw0bzlaQlR6Vm5kWjJ4aGN0b1dGSTRobGpEUk9ObXIzbkVaRG5rS0pJRFVVM21GdTJ2MnNralhBSDRjYjNyUGRrOVNkdUxZVEJTTTZpLW9oN09oMlI4QkQyT0JQNzZZUHc1RTl2X0tZM1ZyWHZpWDhKNlZRZnM5YWEyOFl5TEo1U1dGbzBoQld1S2drLXhXYw?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+ADAB+BA+edital+para+200+vagas+pode+sair+na+próxima+semana++JC+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+ADAB+BA+edital+para+200+vagas+pode+sair+na+próxima+semana++JC+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
     <div class="card">
+        <span class="tag">NOVIDADE</span>
         <h3>Concurso público da Petrobras em 2026 tem banca organizadora definida - lignews.com.br</h3>
-        <p>Publicado em: Fri, 09 Jan 2026 19:30:39 GMT</p>
-        <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOM3d1SE9STDVlNGhEd29KYlpzUHpKbkZyaDFPQTNYUFZLWXgxRk9nZDJXdlNkcUR0YXVtanR6MHJBdnhGVnB5YXlxeDJoeHM5M1l4cHJvWGg3ZGF4WUVtamNkR2tuVGNHc3E1WTBjSjZLZWJEXzcxOUIyWWtxVnBFRG55VFdWdkgxV0JKZGxnRG56dTQyZ0VCREo4TVhCMVQtaEQtQjVaZE1iSDdWVDlyOdIBrwFBVV95cUxOSVgyRGo2c1Jjdm10cmUwNGJvVWxNT2xqbXFtaHh1d3JoMHdrUXZfcTZKOElyaXY5a2tqQWlRX0NfSFkwREtrZUIxRVdtTVZLQnJWNzg3ejduekxqZ3BGVHRFUll3aktIelFLeTJPcVFHc3VpT09rZXNDOHRTZE9mVW9wQjRHM25vU3UyWGlJMTd6Qkx0eUJsbElPc1FBbGIwdk5ZM3BBOXk2QUNzQkJR?oc=5" target="_blank">Ler Notícia</a><br><br>
-        <a href="https://www.amazon.com.br/s?k=apostila+Concurso+público+da+Petrobras+em+2026+tem+banca+organizadora+definida++lignewscombr&tag=eduardohen00f-20" class="btn" target="_blank">🛒 Apostilas Amazon</a>
-        <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+público+da+Petrobras+em+2026+tem+banca+organizadora+definida++lignewscombr" class="btn" style="background:#ee4d2d" target="_blank">🛍️ Apostilas Shopee</a>
+        <p class="data">🕒 Postado em: Fri, 09 Jan 2026 19:30:39 GMT</p>
+        <div class="links-uteis">
+            <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOSVgyRGo2c1Jjdm10cmUwNGJvVWxNT2xqbXFtaHh1d3JoMHdrUXZfcTZKOElyaXY5a2tqQWlRX0NfSFkwREtrZUIxRVdtTVZLQnJWNzg3ejduekxqZ3BGVHRFUll3aktIelFLeTJPcVFHc3VpT09rZXNDOHRTZE9mVW9wQjRHM25vU3UyWGlJMTd6Qkx0eUJsbElPc1FBbGIwdk5ZM3BBOXk2QUNzQkJR0gGvAUFVX3lxTE5JWDJEajZzUmN2bXRyZTA0Ym9VbE1PbGptcW1oeHV3cmgwd2tRdl9xNko4SXJpdjlra2pBaVFfQ19IWTBES2tlQjFFV21NVktCclY3ODd6N256TGpncEZUdEVSWXdqS0h6UUt5Mk9xUUdzdWlPT2tlc0M4dFNkT2ZVb3BCNEczbm9TdTJYaUkxN3pCTHR5QmxsSU9zUUFsYjB2TlkzcEE5eTZBQ3NCQlE?oc=5" class="link-original" target="_blank">🔗 Ler Notícia Completa</a>
+        </div>
+        <div class="buttons-container">
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+público+da+Petrobras+em+2026+tem+banca+organizadora+definida++lignewscombr&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+público+da+Petrobras+em+2026+tem+banca+organizadora+definida++lignewscombr" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
     </div>
     
+        </div>
+
+        <div class="ads-space">--- ESPAÇO PARA GOOGLE ADS (RODAPÉ) ---</div>
     </div>
+
+    <footer>
+        <p><b>Alerta Concursos Hoje</b> &copy; 2026</p>
+        <p>Este site é um agregador automático de notícias públicas. Não possuímos vínculo com os órgãos oficiais.</p>
+        <p>As ofertas de produtos são geradas através de programas de afiliados (Amazon e Shopee).</p>
+    </footer>
 </body>
 </html>
