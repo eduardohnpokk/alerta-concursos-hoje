@@ -121,8 +121,9 @@ template = f"""
         <nav class="filter-bar" aria-label="Filtros de notícias">{botoes_html}</nav>
         <div id="noticias">{" ".join(lista_cards)}</div>
     </main>
-    <footer>
+<footer>
         <p><b>Alerta Concursos Hoje</b> - {datetime.now().year}</p>
+        <p><a href="privacidade.html" style="color:#888;">Política de Privacidade</a></p>
         <p>As melhores oportunidades de concursos públicos reunidas automaticamente.</p>
     </footer>
     <script>
