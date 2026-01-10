@@ -4,285 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerta Concursos Hoje</title>
+    <title>Alerta Concursos Hoje | Editais Abertos e Apostilas 2026</title>
+    
+    <meta name="description" content="Acompanhe diariamente os novos editais de concursos abertos e previstos. Encontre materiais de estudo e apostilas para Concursos Sudeste: os EDITAIS previstos nos próximos meses! - Estratégia Concursos, Concursos Ceará: vagas e editais para 2026! - Estratégia Concursos...">
+    <meta name="keywords" content="concursos 2026, editais abertos, apostilas concurso, inscrições abertas, concurso público">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="📍 Alerta Concursos Hoje | Portal Automático de Editais">
+    <meta property="og:description" content="Veja as vagas de hoje e prepare-se com as melhores apostilas.">
+    <meta property="og:type" content="website">
+    
     <style>
         :root { --primary: #2c3e50; --accent: #e74c3c; --amazon: #f39c12; --shopee: #ee4d2d; --bg: #f4f7f6; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); }
-        header { background: #000; color: white; padding: 30px; text-align: center; border-bottom: 4px solid var(--accent); }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        header { background: linear-gradient(135deg, #000 0%, #2c3e50 100%); color: white; padding: 40px 10px; text-align: center; border-bottom: 4px solid var(--accent); }
         .container { max-width: 900px; margin: auto; padding: 20px; }
         .filter-bar { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .filter-btn { padding: 7px 15px; border: 1px solid #ddd; border-radius: 20px; cursor: pointer; background: white; font-size: 13px; }
-        .filter-btn.active { background: var(--primary); color: white; }
-        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; border-left: 6px solid #ddd; }
+        .filter-btn { padding: 7px 15px; border: 1px solid #ddd; border-radius: 20px; cursor: pointer; background: white; font-size: 13px; font-weight: 500; }
+        .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; border-left: 6px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .card.hidden { display: none; }
+        .card h2 { font-size: 1.4em; margin-top: 5px; color: var(--primary); }
         .tag { padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; color: white; text-transform: uppercase; }
         .tag-aberto { background: #27ae60; } .tag-previsto { background: #f1c40f; color: #000; } .tag-news { background: #3498db; }
-        .buttons-container { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
-        .btn { flex: 1; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; text-align: center; color: white; font-size: 13px; }
+        .buttons-container { display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .btn { flex: 1; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; color: white; font-size: 13px; }
         .btn-amazon { background: var(--amazon); } .btn-shopee { background: var(--shopee); }
-        .btn-link { color: var(--primary); border: 1px solid var(--primary); flex: 1; text-align: center; text-decoration: none; border-radius: 5px; padding: 10px; font-size: 13px; }
-        footer { text-align: center; padding: 40px; color: #888; font-size: 13px; }
+        .btn-link { color: var(--primary); border: 1px solid var(--primary); flex: 1; text-align: center; text-decoration: none; border-radius: 6px; padding: 12px; font-size: 13px; }
+        footer { text-align: center; padding: 50px 20px; color: #888; font-size: 13px; background: #eee; margin-top: 40px; }
     </style>
 </head>
 <body>
-    <header><h1>📍 Alerta Concursos Hoje</h1><p>Atualizado em: 10/01/2026 14:14</p></header>
-    <div class="container">
-        <div class="filter-bar"><button class="filter-btn active" onclick="filtrar('todos')">Todos</button><button class="filter-btn" onclick="filtrar('cat-nível-médio')">Nível Médio</button><button class="filter-btn" onclick="filtrar('cat-nível-superior')">Nível Superior</button><button class="filter-btn" onclick="filtrar('cat-policial')">Policial</button><button class="filter-btn" onclick="filtrar('cat-tribunais')">Tribunais</button></div>
+    <header>
+        <h1>📍 Alerta Concursos Hoje</h1>
+        <p>Editais Atualizados em: 10/01/2026 às 14:18</p>
+    </header>
+    <main class="container">
+        <nav class="filter-bar" aria-label="Filtros de notícias"><button class="filter-btn active" onclick="filtrar('todos')">Todos</button><button class="filter-btn" onclick="filtrar('cat-tribunais')">Tribunais</button></nav>
         <div id="noticias">
-    <div class="card " data-titulo="concursos sudeste: os editais previstos nos próximos meses! - estratégia concursos">
+    <article class="card " data-titulo="concursos sudeste: os editais previstos nos próximos meses! - estratégia concursos">
         <span class="tag tag-previsto">Previsto</span>
-        <h3>Concursos Sudeste: os EDITAIS previstos nos próximos meses! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 12:45:05 GMT</p>
+        <h2>Concursos Sudeste: os EDITAIS previstos nos próximos meses! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 12:45:05 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9GRW1nT3JlMjBuRW1CWjhDS3pWaTdiMUlIY3ZNeHFLeEluNldJcWNBMUsxWU4wQTRYUm4wRkhJSGw0NnhmZ0pLYlBiRmpGY2VhTGluQmZXQmJVSllrTHZLY3RvOFZmaVRHcVgwLXVGcw?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9GRW1nT3JlMjBuRW1CWjhDS3pWaTdiMUlIY3ZNeHFLeEluNldJcWNBMUsxWU4wQTRYUm4wRkhJSGw0NnhmZ0pLYlBiRmpGY2VhTGluQmZXQmJVSllrTHZLY3RvOFZmaVRHcVgwLXVGcw?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Sudeste+os+EDITAIS+previstos+nos+próximos+meses++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Sudeste+os+EDITAIS+previstos+nos+próximos+meses++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="concursos ceará: vagas e editais para 2026! - estratégia concursos">
+    <article class="card " data-titulo="concursos ceará: vagas e editais para 2026! - estratégia concursos">
         <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Ceará: vagas e editais para 2026! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 04:03:24 GMT</p>
+        <h2>Concursos Ceará: vagas e editais para 2026! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 04:03:24 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yaVlOZ09MYWVnWkJnVEU1ak9FdXlpaEJaY01NODdwY0RTZVpuMFRYMkMtajQ1bnVzRVBhUUJXcWhrNnpkU2tERkJMdWZlVHVUTzBhVVY0NGhhOU04YVB1OGZOYWx5Q1hU?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yaVlOZ09MYWVnWkJnVEU1ak9FdXlpaEJaY01NODdwY0RTZVpuMFRYMkMtajQ1bnVzRVBhUUJXcWhrNnpkU2tERkJMdWZlVHVUTzBhVVY0NGhhOU04YVB1OGZOYWx5Q1hU?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Ceará+vagas+e+editais+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="concurso pm ma: edital previsto até o final de abril - folha dirigida">
+    <article class="card " data-titulo="concurso pm ma: edital previsto até o final de abril - folha dirigida">
         <span class="tag tag-previsto">Previsto</span>
-        <h3>Concurso PM MA: edital previsto até o final de abril - Folha Dirigida</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 18:00:00 GMT</p>
+        <h2>Concurso PM MA: edital previsto até o final de abril - Folha Dirigida</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 18:00:00 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9Jcjlkc1VyRnQ1Y0tIMWlIUVJCMEw1ZlgwQ1ZtMDluWUVxYlFkeWNUcktieVhUelhUU3J1Vi1kLVh4NEgyVTlRN2VyYWVoTDBKb2MzRTRVV3BETUJMbi1wN2Z3ZkVaZGEyRnNiZ1VqdXk?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9Jcjlkc1VyRnQ1Y0tIMWlIUVJCMEw1ZlgwQ1ZtMDluWUVxYlFkeWNUcktieVhUelhUU3J1Vi1kLVh4NEgyVTlRN2VyYWVoTDBKb2MzRTRVV3BETUJMbi1wN2Z3ZkVaZGEyRnNiZ1VqdXk?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concurso+PM+MA+edital+previsto+até+o+final+de+abril++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+PM+MA+edital+previsto+até+o+final+de+abril++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="concursos centro-oeste: vagas, editais e últimas notícias! - estratégia concursos">
+    <article class="card " data-titulo="concursos centro-oeste: vagas, editais e últimas notícias! - estratégia concursos">
         <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Centro-Oeste: vagas, editais e últimas notícias! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 10:20:18 GMT</p>
+        <h2>Concursos Centro-Oeste: vagas, editais e últimas notícias! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 10:20:18 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9pbDJPNHZiTkk3dm1Ed3dyV1V2T1Y1ZFc1MEZvRS1EQlR6U1JidkpoU3NHVHBKLTlzN0Q5ZlQwTXlQWW96eVpBQ29qSmNvVHQ3VkwwREx1SjI0S0EyWG1rcm5nOFZOZnFyNXA3eExVdFVGQVloWGc?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9pbDJPNHZiTkk3dm1Ed3dyV1V2T1Y1ZFc1MEZvRS1EQlR6U1JidkpoU3NHVHBKLTlzN0Q5ZlQwTXlQWW96eVpBQ29qSmNvVHQ3VkwwREx1SjI0S0EyWG1rcm5nOFZOZnFyNXA3eExVdFVGQVloWGc?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concursos+CentroOeste+vagas+editais+e+últimas+notícias++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+CentroOeste+vagas+editais+e+últimas+notícias++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="enam 2026.1: edital previsto para fevereiro - estratégia educacional">
-        <span class="tag tag-previsto">Previsto</span>
-        <h3>ENAM 2026.1: edital previsto para fevereiro - Estratégia Educacional</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 04:12:48 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ORm1nQU1BTEtrN2tVZzQwWTNLWW1EdThraDFDSF9CdmNSNndqUGZKSllBS1dGeDJuQl82ZkgtUGlBSnJYUzRpVmswd1dSUzVteldUZjFkTEs?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+ENAM+20261+edital+previsto+para+fevereiro++Estratégia+Educacional&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20ENAM+20261+edital+previsto+para+fevereiro++Estratégia+Educacional" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card cat-nível-médio cat-nível-superior" data-titulo="notícia - concurso da udesc prevê 40 vagas para técnicos de nível médio e superior - universidade do estado de santa catarina (udesc)">
+    <article class="card cat-tribunais" data-titulo="concurso tce pb: pode ser publicado no primeiro trimestre! - blog gran cursos online">
         <span class="tag tag-news">Notícia</span>
-        <h3>Notícia - Concurso da Udesc prevê 40 vagas para técnicos de nível médio e superior - Universidade do Estado de Santa Catarina (Udesc)</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 17:21:00 GMT</p>
+        <h2>Concurso TCE PB: pode ser publicado no primeiro trimestre! - Blog Gran Cursos Online</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 23:12:01 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVFvZTZtM3VLbDRTa3BjcFk5UGhjM2tzYTBpeFgyMDhtSW9pakhfWFNWQlNpVWRFMlBRTkVVOWtRRFVvWmRkbExBLTJNc0d2VXdDNWJ4akNsSFlXc2R2NzZrRFBGNlIxQ282N1FnWkhwZ0t3Q0NjNld1TXR0UmdCbVVNSHh6SWFWdDZVQmpUT3dZVjNycUdEQV9rZ3BxdVpnVkFB?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Notícia++Concurso+da+Udesc+prevê+40+vagas+para+técnicos+de+nível+médio+e+superior++Universidade+do+Estado+de+Santa+Catarina+Udesc&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Notícia++Concurso+da+Udesc+prevê+40+vagas+para+técnicos+de+nível+médio+e+superior++Universidade+do+Estado+de+Santa+Catarina+Udesc" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+            <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQdV9zMTYxR0tuc1kzc1hYVlpFdk1ZaWJEUUNaekhwTG5LWjhkTUNZUlQyeGhDcmpzOE03TmpIbUwweXVUd0I2TFNqUkg4RVh3OHQ4dEJWNTNnZks1QVkzSW9TamFwLVNZN0RBVWlOT0hJaVladjZralY3X0s5ZTBSb0dUa0thYnhfMXNPV3Bsb28?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+TCE+PB+pode+ser+publicado+no+primeiro+trimestre++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+TCE+PB+pode+ser+publicado+no+primeiro+trimestre++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card cat-tribunais" data-titulo="concurso tce pb: pode ser publicado no primeiro semestre! - blog gran cursos online">
+    <article class="card " data-titulo="concursos sul: as principais oportunidades para 2026! - estratégia concursos">
         <span class="tag tag-news">Notícia</span>
-        <h3>Concurso TCE PB: pode ser publicado no primeiro semestre! - Blog Gran Cursos Online</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 23:34:03 GMT</p>
+        <h2>Concursos Sul: as principais OPORTUNIDADES para 2026! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 10:14:15 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxObGhmTm5hT1VGSXp4Q1lSaVRMNUxtQWdfbUs0N3RtWjhvYTIxbXRxUVE0TDlaYzRuaHpuWXliMURUM1hDZ0dMdmExWWJ5UFV1ZXdaU01VUlZMZU5CRWJtcERZVm83anNGbngwQjJwQ0didkwxdDdSeHBwbXdudXlka0RDTlJzbUYzekxyVDNMVQ?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+TCE+PB+pode+ser+publicado+no+primeiro+semestre++Blog+Gran+Cursos+Online&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+TCE+PB+pode+ser+publicado+no+primeiro+semestre++Blog+Gran+Cursos+Online" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos sul: as principais oportunidades para 2026! - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Sul: as principais OPORTUNIDADES para 2026! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 10:14:15 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE01bkxsN2dzQV9WWUtTNzBXQ1V1RlFNc05rQUxxNVUxWVJZeURIN2I0RExkUXpISEY3SW1Db2xpTmJVTm1NZGt0aXduOWFJRnE4NS1VMzVOdXM5YWlwemRPZi01b1VCaWltbmc?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE01bkxsN2dzQV9WWUtTNzBXQ1V1RlFNc05rQUxxNVUxWVJZeURIN2I0RExkUXpISEY3SW1Db2xpTmJVTm1NZGt0aXduOWFJRnE4NS1VMzVOdXM5YWlwemRPZi01b1VCaWltbmc?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Sul+as+principais+OPORTUNIDADES+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Sul+as+principais+OPORTUNIDADES+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="concursos piauí: editais anunciados para 2026! - estratégia concursos">
+    <article class="card " data-titulo="concursos ba: ploa 2026 prevê mais de 1.000 vagas em 16 órgãos - direção concursos">
         <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Piauí: editais anunciados para 2026! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 02:17:04 GMT</p>
+        <h2>Concursos BA: PLOA 2026 prevê mais de 1.000 vagas em 16 órgãos - Direção Concursos</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 16:07:00 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9QYUl5TlM5cTZNdTc1dGtDM2s3d2ZCbnd2VWdMV24xeEVqNWJURXNiVHp2bDBiZDhIQkNOS3V2dmh4elZJN1ZLaWF0QTlUanJ1Y2tUWjNxcGYzY2NOZ2d4Y2d6ZDNsdjlq?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Piauí+editais+anunciados+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Piauí+editais+anunciados+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos amapá: atualizado! vagas para 2026 - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Amapá: ATUALIZADO! Vagas para 2026 - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 06:09:17 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTOHR5YTlBNVBXYnBrYlhpT1FPZmc4VkVoQlhiaW5ENWkzN0ViMElGMW1zZEEzY1hna3drUW9rUkJBdklaTzlkYUxxNENtcGlfVmVIYXp3VUk2Rm8xLUtJMVBwcGRjUFg3?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Amapá+ATUALIZADO+Vagas+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Amapá+ATUALIZADO+Vagas+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos guarda municipal: as oportunidades de 2026! - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Guarda Municipal: as oportunidades de 2026! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 03:27:47 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9JeGJPbW0tT1JIYlR6X00tdE50OGkxYVFFZ1NZc3ZreFJyVnRiLW16THpnOTk0NUdwNjNjUjhUamNEazU4dGJoeHlVUkhwcUFGUkdUQkFoYkdFZWUwblMtLUFBMkt6eHQ3OEYzZlpDOE95aEdZWWlrejREcw?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos roraima: atualizado! vagas previstas em roraima em 2026 - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos Roraima: ATUALIZADO! Vagas previstas em Roraima em 2026 - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 03:10:44 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE55Uk1iOEV6cmt3ejNOcTEtYTI4SzhWbHpBTmpzdng1bUduYmR4aUY4bC1lN1NjYzhvcGR6X1pnZTlCNWxXMHhzWDk2OHFKcGJNaVZqb1BzWUtGdy1TYVI4YnN4M0JIMEVX?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Roraima+ATUALIZADO+Vagas+previstas+em+Roraima+em+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Roraima+ATUALIZADO+Vagas+previstas+em+Roraima+em+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos mp 2026: confira as oportunidades previstas! - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos MP 2026: confira as oportunidades previstas! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 10:38:07 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wY19Ua2JKUGlCWjlySlE3YU5Tek44QW9NSXQtVHpfcHNGc3FVUE9OeHJkUHZuc25hajhzeExkd3NiZUcwSTdxSVJvRW9RdnU2SHkzMnhNaEpnTFVKUllsenRlRXpQRmpa?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concurso prefeitura viana (es): inscrições encerradas - estratégia concursos">
-        <span class="tag tag-aberto">Aberto</span>
-        <h3>Concurso Prefeitura Viana (ES): inscrições encerradas - Estratégia Concursos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 23:49:27 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBDRG5hdUZJSUtYLXhDYm8zU0NON0xQTk9lYzZEeV9pZ1hxbkxsQjB2eG1jN3BTcmVFTWlEdDBpX2RWdHFfbGo1ZGE1ZmlSSWJPMWN2UV9Jb1NRTXdyMDRuQmxMSUMtVXduSjc3ZXZqVjdDY2VoWTA3RHZR?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card cat-policial" data-titulo="concurso gcm sp: vunesp é a banca! serão 500 vagas - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concurso GCM SP: Vunesp é a banca! Serão 500 vagas - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 05:25:36 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE11YzhWZUVoc2xXNVVtbmVTbGstUnQ5Uy04OE1CRllWVVNrdlhIbF82R3laQXBDbmxKSFBVWHFTMFJvQXVZU25fTlZYLThpZ0hnd2dNU1R0Y2xVcjZMUm03QTg4Q2VqYTFxazI0MA?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+GCM+SP+Vunesp+é+a+banca+Serão+500+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concurso seinfra ba é anunciado; serão 40 vagas! - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concurso SEINFRA BA é anunciado; serão 40 vagas! - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 04:23:34 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE01SFNaRDZxLVVLSnM0ems2MXVSdzlTcTNrV3NTaHlSTmNmV3ZJMU96STlHMTB5Nk1JMFRsUDdQZlBoZHlHbEQtSVYwdWVNLUtKSk12TUhYTlQ5eFliVzZpQWtBN191UnJJS0NNRjdtSUZtZw?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+SEINFRA+BA+é+anunciado+serão+40+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+SEINFRA+BA+é+anunciado+serão+40+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concurso adab: edital iminente com 200 vagas; veja quando sai - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concurso ADAB: edital iminente com 200 vagas; veja quando sai - Estratégia Concursos</h3>
-        <p class="data">🕒 Sat, 10 Jan 2026 02:43:49 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5lcDBzWC15cF92TnFVM3cxTHZjcEk4UV9OTHdyWU4xYXpRYkdQTkNsdlRveFpKSTVtNmRJT1h5ekJyM0FPUlZIREs5QVVxam5YRjJlR2wtYTMyV05hczZOc3pvbkc3N3JnZnc?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concurso sema ba: foram anunciadas 110 vagas para 2026! - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concurso SEMA BA: foram anunciadas 110 vagas para 2026! - Estratégia Concursos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 20:56:11 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9veWJrRWVLT2dXS1VWSDZ2TE1sTHpwZ3BDaldoNzhLSFRIcjFMQ1JjMEgwV3ZmLVV1bC1Od2ktNW4tUXpmZ3VaeGZXME11TmxOQ3cxZzNIQjBxQXpLSWJxUDFmSXFkZVZJZGdWWXBn?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+SEMA+BA+foram+anunciadas+110+vagas+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+SEMA+BA+foram+anunciadas+110+vagas+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos ba: ploa 2026 prevê 1.146 vagas - estratégia concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos BA: PLOA 2026 prevê 1.146 vagas - Estratégia Concursos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 15:32:00 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeW5WMlJxMnI2NzhaZ18wVEVhNlc2Unc3TTd1OVVVZXpKRnEybjRONWFrZUFPc1k5VHNDMW1BSGxQSXZQZVdxRWMwQk1Gblpyelp4Tl9YWGpRMEVvS3hfRnFyMlAtNWt6alBNdVUtT3dkLVdGaXh6YVUxMEN6cGZ2MTNsb2RpMUJVTENv?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+BA+PLOA+2026+prevê+1146+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+BA+PLOA+2026+prevê+1146+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos trt: confira os melhores editais previstos em 2026! - direção concursos">
-        <span class="tag tag-previsto">Previsto</span>
-        <h3>Concursos TRT: confira os melhores editais previstos em 2026! - Direção Concursos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 18:19:00 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5NZzNtOTZIT1dqYUpXNmFDM2NZa3U4a1RMcGhndThpSmVxVTdXTHpUVUJILWdKX1kwbmVjR3g5OGFLSnpGVzN2c2pRMjIzSlFheFgxbVhHUTczQ3dra0RBeWl5alVrRzhIRjNISzdhRDBTaHFBblhfcUFn?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+TRT+confira+os+melhores+editais+previstos+em+2026++Direção+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+TRT+confira+os+melhores+editais+previstos+em+2026++Direção+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos ba: ploa 2026 reserva mil vagas para 16 órgãos - folha dirigida">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos BA: PLOA 2026 reserva mil vagas para 16 órgãos - Folha Dirigida</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 14:38:11 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5sTEJSSHV0MGVLQmRGeXk3cmN5dHRSYW9RQVJTd2hiYlViMUZwNHByYjc2NXVnbDZLZ0hGTi1MdGhBZU9XUFBkUV9yYVdLUXZfUm5hTGJCaEF5T1pHMG9LazVLd0NKYnpNcmpRNnNuZjdJeGpITVpvTw?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
-            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+BA+PLOA+2026+reserva+mil+vagas+para+16+órgãos++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
-            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+BA+PLOA+2026+reserva+mil+vagas+para+16+órgãos++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
-        </div>
-    </div>
-     
-    <div class="card " data-titulo="concursos ba: ploa 2026 prevê mais de 1.000 vagas em 16 órgãos - direção concursos">
-        <span class="tag tag-news">Notícia</span>
-        <h3>Concursos BA: PLOA 2026 prevê mais de 1.000 vagas em 16 órgãos - Direção Concursos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 16:07:00 GMT</p>
-        <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1DNWFCaUJJSy1udlZnQ3JfdWpOd3RxbERmNk5FbE9tX2RvRXVKUkY5Sm15Qk4zX2ZqMGZRRGlaMlk3bndKM0ZwbDFOckFHdFpjaDRDTF9RWlZZbHBtRGpiaVFUdVo4TkgzTmkyMnFST2Fqa3hReFE?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1DNWFCaUJJSy1udlZnQ3JfdWpOd3RxbERmNk5FbE9tX2RvRXVKUkY5Sm15Qk4zX2ZqMGZRRGlaMlk3bndKM0ZwbDFOckFHdFpjaDRDTF9RWlZZbHBtRGpiaVFUdVo4TkgzTmkyMnFST2Fqa3hReFE?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Concursos+BA+PLOA+2026+prevê+mais+de+1000+vagas+em+16+órgãos++Direção+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+BA+PLOA+2026+prevê+mais+de+1000+vagas+em+16+órgãos++Direção+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
      
-    <div class="card " data-titulo="barreirinha publica novas convocações do concurso da semed - portal do marcos santos">
+    <article class="card " data-titulo="concursos ba: ploa 2026 reserva mil vagas para 16 órgãos - folha dirigida">
         <span class="tag tag-news">Notícia</span>
-        <h3>Barreirinha publica novas convocações do concurso da Semed - Portal do Marcos Santos</h3>
-        <p class="data">🕒 Fri, 09 Jan 2026 16:58:34 GMT</p>
+        <h2>Concursos BA: PLOA 2026 reserva mil vagas para 16 órgãos - Folha Dirigida</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 14:38:11 GMT</p>
         <div class="buttons-container">
-            <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNYzZKOFM1NDNla2RtT1c1cE92dU81ZkZ1YldsQ0w3ZWpUV2ozZ3Jhc0U5TFFrcEY0RkFKSktYOHF0aEJyLWVVUWJLMENrN2tobDF4NmRHWm55NUh4OGFfUWRWVldQMlBVWmVqVnZfVVk5ZV9ScXB6QV9QR29ScGlwZzh3a0Fia2NlaVFTSXZnbTgxaG9FbnhN?oc=5" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5sTEJSSHV0MGVLQmRGeXk3cmN5dHRSYW9RQVJTd2hiYlViMUZwNHByYjc2NXVnbDZLZ0hGTi1MdGhBZU9XUFBkUV9yYVdLUXZfUm5hTGJCaEF5T1pHMG9LazVLd0NKYnpNcmpRNnNuZjdJeGpITVpvTw?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+BA+PLOA+2026+reserva+mil+vagas+para+16+órgãos++Folha+Dirigida&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+BA+PLOA+2026+reserva+mil+vagas+para+16+órgãos++Folha+Dirigida" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos piauí: editais anunciados para 2026! - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos Piauí: editais anunciados para 2026! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 02:17:04 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9QYUl5TlM5cTZNdTc1dGtDM2s3d2ZCbnd2VWdMV24xeEVqNWJURXNiVHp2bDBiZDhIQkNOS3V2dmh4elZJN1ZLaWF0QTlUanJ1Y2tUWjNxcGYzY2NOZ2d4Y2d6ZDNsdjlq?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Piauí+editais+anunciados+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Piauí+editais+anunciados+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="barreirinha publica novas convocações do concurso da semed - portal do marcos santos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Barreirinha publica novas convocações do concurso da Semed - Portal do Marcos Santos</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 16:58:34 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNYzZKOFM1NDNla2RtT1c1cE92dU81ZkZ1YldsQ0w3ZWpUV2ozZ3Jhc0U5TFFrcEY0RkFKSktYOHF0aEJyLWVVUWJLMENrN2tobDF4NmRHWm55NUh4OGFfUWRWVldQMlBVWmVqVnZfVVk5ZV9ScXB6QV9QR29ScGlwZzh3a0Fia2NlaVFTSXZnbTgxaG9FbnhN?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="https://www.amazon.com.br/s?k=apostila+Barreirinha+publica+novas+convocações+do+concurso+da+Semed++Portal+do+Marcos+Santos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="https://shopee.com.br/search?keyword=apostila%20Barreirinha+publica+novas+convocações+do+concurso+da+Semed++Portal+do+Marcos+Santos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
+    </article>
+     
+    <article class="card " data-titulo="governo comprou menos ambulâncias para o inem do que o previsto (e com atraso) - zap notícias">
+        <span class="tag tag-previsto">Previsto</span>
+        <h2>Governo comprou menos ambulâncias para o INEM do que o previsto (e com atraso) - ZAP Notícias</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 10:45:28 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQSk5PWmcwQkROVGliZGtjUktsX1lHMFQzaG9ZM3RXWFhZMGFab3h5QnFvWlBCX2FNZjFXUVpnSnBvSEhDcEJQaUxqbDBIVHpsOHVOMjRqRTRJbnV2UU9vbFFya1FvVzFGcFRMbHpGZHl2VnZCVnUtcEhTOEduRkhXN0R3bEFEUzcyaWhndHpBSERyYjAzMENVckw5RkkyNTJRYi1NWURR?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Governo+comprou+menos+ambulâncias+para+o+INEM+do+que+o+previsto+e+com+atraso++ZAP+Notícias&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Governo+comprou+menos+ambulâncias+para+o+INEM+do+que+o+previsto+e+com+atraso++ZAP+Notícias" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos amapá: atualizado! vagas para 2026 - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos Amapá: ATUALIZADO! Vagas para 2026 - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 06:09:17 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTOHR5YTlBNVBXYnBrYlhpT1FPZmc4VkVoQlhiaW5ENWkzN0ViMElGMW1zZEEzY1hna3drUW9rUkJBdklaTzlkYUxxNENtcGlfVmVIYXp3VUk2Rm8xLUtJMVBwcGRjUFg3?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Amapá+ATUALIZADO+Vagas+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Amapá+ATUALIZADO+Vagas+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos guarda municipal: as oportunidades de 2026! - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos Guarda Municipal: as oportunidades de 2026! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 03:27:47 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9JeGJPbW0tT1JIYlR6X00tdE50OGkxYVFFZ1NZc3ZreFJyVnRiLW16THpnOTk0NUdwNjNjUjhUamNEazU4dGJoeHlVUkhwcUFGUkdUQkFoYkdFZWUwblMtLUFBMkt6eHQ3OEYzZlpDOE95aEdZWWlrejREcw?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Guarda+Municipal+as+oportunidades+de+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos roraima: atualizado! vagas previstas em roraima em 2026 - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos Roraima: ATUALIZADO! Vagas previstas em Roraima em 2026 - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 03:10:44 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE55Uk1iOEV6cmt3ejNOcTEtYTI4SzhWbHpBTmpzdng1bUduYmR4aUY4bC1lN1NjYzhvcGR6X1pnZTlCNWxXMHhzWDk2OHFKcGJNaVZqb1BzWUtGdy1TYVI4YnN4M0JIMEVX?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+Roraima+ATUALIZADO+Vagas+previstas+em+Roraima+em+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+Roraima+ATUALIZADO+Vagas+previstas+em+Roraima+em+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos mp 2026: confira as oportunidades previstas! - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos MP 2026: confira as oportunidades previstas! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 10:38:07 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wY19Ua2JKUGlCWjlySlE3YU5Tek44QW9NSXQtVHpfcHNGc3FVUE9OeHJkUHZuc25hajhzeExkd3NiZUcwSTdxSVJvRW9RdnU2SHkzMnhNaEpnTFVKUllsenRlRXpQRmpa?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+MP+2026+confira+as+oportunidades+previstas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concurso prefeitura viana (es): inscrições encerradas - estratégia concursos">
+        <span class="tag tag-aberto">Aberto</span>
+        <h2>Concurso Prefeitura Viana (ES): inscrições encerradas - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 23:49:27 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBDRG5hdUZJSUtYLXhDYm8zU0NON0xQTk9lYzZEeV9pZ1hxbkxsQjB2eG1jN3BTcmVFTWlEdDBpX2RWdHFfbGo1ZGE1ZmlSSWJPMWN2UV9Jb1NRTXdyMDRuQmxMSUMtVXduSjc3ZXZqVjdDY2VoWTA3RHZR?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+Prefeitura+Viana+ES+inscrições+encerradas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concurso adab: edital iminente com 200 vagas; veja quando sai - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concurso ADAB: edital iminente com 200 vagas; veja quando sai - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Sat, 10 Jan 2026 02:43:49 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5lcDBzWC15cF92TnFVM3cxTHZjcEk4UV9OTHdyWU4xYXpRYkdQTkNsdlRveFpKSTVtNmRJT1h5ekJyM0FPUlZIREs5QVVxam5YRjJlR2wtYTMyV05hczZOc3pvbkc3N3JnZnc?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+ADAB+edital+iminente+com+200+vagas+veja+quando+sai++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concurso sema ba: foram anunciadas 110 vagas para 2026! - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concurso SEMA BA: foram anunciadas 110 vagas para 2026! - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 20:56:11 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9veWJrRWVLT2dXS1VWSDZ2TE1sTHpwZ3BDaldoNzhLSFRIcjFMQ1JjMEgwV3ZmLVV1bC1Od2ktNW4tUXpmZ3VaeGZXME11TmxOQ3cxZzNIQjBxQXpLSWJxUDFmSXFkZVZJZGdWWXBn?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concurso+SEMA+BA+foram+anunciadas+110+vagas+para+2026++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concurso+SEMA+BA+foram+anunciadas+110+vagas+para+2026++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
+     
+    <article class="card " data-titulo="concursos ba: ploa 2026 prevê 1.146 vagas - estratégia concursos">
+        <span class="tag tag-news">Notícia</span>
+        <h2>Concursos BA: PLOA 2026 prevê 1.146 vagas - Estratégia Concursos</h2>
+        <p class="data">🕒 Publicado em: Fri, 09 Jan 2026 15:32:00 GMT</p>
+        <div class="buttons-container">
+            <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeW5WMlJxMnI2NzhaZ18wVEVhNlc2Unc3TTd1OVVVZXpKRnEybjRONWFrZUFPc1k5VHNDMW1BSGxQSXZQZVdxRWMwQk1Gblpyelp4Tl9YWGpRMEVvS3hfRnFyMlAtNWt6alBNdVUtT3dkLVdGaXh6YVUxMEN6cGZ2MTNsb2RpMUJVTENv?oc=5" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
+            <a href="https://www.amazon.com.br/s?k=apostila+Concursos+BA+PLOA+2026+prevê+1146+vagas++Estratégia+Concursos&tag=eduardohen00f-20" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
+            <a href="https://shopee.com.br/search?keyword=apostila%20Concursos+BA+PLOA+2026+prevê+1146+vagas++Estratégia+Concursos" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
+        </div>
+    </article>
     </div>
-    </div>
-    </div>
+    </main>
+    <footer>
+        <p><b>Alerta Concursos Hoje</b> - 2026</p>
+        <p>As melhores oportunidades de concursos públicos reunidas automaticamente.</p>
+    </footer>
     <script>
         function filtrar(classe) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
