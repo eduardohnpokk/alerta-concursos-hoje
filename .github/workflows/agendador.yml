@@ -2,8 +2,8 @@ name: build
 
 on:
   schedule:
-    - cron: '0 9,13,18 * * *' # Roda automaticamente às 09h, 13h e 18h
-  workflow_dispatch: # Permite que você rode manualmente quando quiser
+    - cron: '0 9,13,18 * * *' # Roda às 09h, 13h e 18h
+  workflow_dispatch: # Permite rodar manualmente
 
 jobs:
   construir:
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Instalar ferramentas necessárias
+      - name: Instalar ferramentas do requirements
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -33,5 +33,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add index.html
-          git commit -m "Site e Telegram atualizados automaticamente" || echo "Sem mudanças para salvar"
+          git commit -m "Site e Telegram atualizados" || echo "Sem mudanças"
           git push
