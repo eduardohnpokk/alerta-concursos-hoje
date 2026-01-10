@@ -3,7 +3,7 @@ import re
 import os
 from datetime import datetime
 
-# CONFIGURAÇÕES DE AFILIADO (MANTIDAS)
+# CONFIGURAÇÕES DE AFILIADO
 AMAZON_TAG = "eduardohen00f-20"
 SHOPEE_ID = "18368470403"
 
@@ -13,7 +13,6 @@ def limpar_titulo(titulo):
 def identificar_categorias(titulo):
     t = titulo.lower()
     cats = []
-    # Mapeamento de palavras-chave para Categorias
     mapeamento = {
         'Nível Médio': ['médio', 'medio', 'fundamental'],
         'Nível Superior': ['superior', 'graduação', 'graduacao'],
@@ -22,12 +21,10 @@ def identificar_categorias(titulo):
         'Tribunais': ['tribunal', 'tj', 'tre', 'trf', 'tse'],
         'Educação': ['educação', 'educacao', 'professor', 'sme', 'ensino']
     }
-    
     for nome_exibicao, palavras in mapeamento.items():
         if any(p in t for p in palavras):
             cats.append(nome_exibicao)
     
-    # Definição do status (Correção do Erro NameError)
     tag_html = ""
     if "aberto" in t or "inscrições" in t:
         tag_html = '<span class="tag tag-aberto">Aberto</span>'
@@ -45,10 +42,12 @@ feed = feedparser.parse(rss_url)
 # 2. PROCESSAR NOTÍCIAS
 lista_cards = []
 categorias_encontradas = set()
+texto_seo = ""
 
 for entry in feed.entries:
     cats_nome, status_html = identificar_categorias(entry.title)
     termo = limpar_titulo(entry.title)
+    texto_seo += entry.title + ", "
     
     for c in cats_nome:
         categorias_encontradas.add(c)
@@ -58,58 +57,74 @@ for entry in feed.entries:
     link_shp = f"https://shopee.com.br/search?keyword=apostila%20{termo}"
     
     card = f"""
-    <div class="card {classes_css}" data-titulo="{entry.title.lower()}">
+    <article class="card {classes_css}" data-titulo="{entry.title.lower()}">
         {status_html}
-        <h3>{entry.title}</h3>
-        <p class="data">🕒 {entry.published}</p>
+        <h2>{entry.title}</h2>
+        <p class="data">🕒 Publicado em: {entry.published}</p>
         <div class="buttons-container">
-            <a href="{entry.link}" class="btn-link" target="_blank">🔗 Ver Detalhes</a>
+            <a href="{entry.link}" class="btn-link" target="_blank" rel="nofollow">🔗 Ver Edital Oficial</a>
             <a href="{link_amz}" class="btn btn-amazon" target="_blank">🛒 Apostilas Amazon</a>
             <a href="{link_shp}" class="btn btn-shopee" target="_blank">🛍️ Apostilas Shopee</a>
         </div>
-    </div>
+    </article>
     """
     lista_cards.append(card)
 
-# Criar botões dinâmicos
 botoes_html = '<button class="filter-btn active" onclick="filtrar(\'todos\')">Todos</button>'
 for cat in sorted(categorias_encontradas):
     classe_filtro = f"cat-{cat.replace(' ', '-').lower()}"
     botoes_html += f'<button class="filter-btn" onclick="filtrar(\'{classe_filtro}\')">{cat}</button>'
 
-# 3. GERAR O SITE
+# 3. GERAR O SITE COM META TAGS SEO
 template = f"""
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerta Concursos Hoje</title>
+    <title>Alerta Concursos Hoje | Editais Abertos e Apostilas 2026</title>
+    
+    <meta name="description" content="Acompanhe diariamente os novos editais de concursos abertos e previstos. Encontre materiais de estudo e apostilas para {texto_seo[:150]}...">
+    <meta name="keywords" content="concursos 2026, editais abertos, apostilas concurso, inscrições abertas, concurso público">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="📍 Alerta Concursos Hoje | Portal Automático de Editais">
+    <meta property="og:description" content="Veja as vagas de hoje e prepare-se com as melhores apostilas.">
+    <meta property="og:type" content="website">
+    
     <style>
         :root {{ --primary: #2c3e50; --accent: #e74c3c; --amazon: #f39c12; --shopee: #ee4d2d; --bg: #f4f7f6; }}
-        body {{ font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); }}
-        header {{ background: #000; color: white; padding: 30px; text-align: center; border-bottom: 4px solid var(--accent); }}
+        body {{ font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }}
+        header {{ background: linear-gradient(135deg, #000 0%, #2c3e50 100%); color: white; padding: 40px 10px; text-align: center; border-bottom: 4px solid var(--accent); }}
         .container {{ max-width: 900px; margin: auto; padding: 20px; }}
         .filter-bar {{ background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }}
-        .filter-btn {{ padding: 7px 15px; border: 1px solid #ddd; border-radius: 20px; cursor: pointer; background: white; font-size: 13px; }}
-        .filter-btn.active {{ background: var(--primary); color: white; }}
-        .card {{ background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; border-left: 6px solid #ddd; }}
+        .filter-btn {{ padding: 7px 15px; border: 1px solid #ddd; border-radius: 20px; cursor: pointer; background: white; font-size: 13px; font-weight: 500; }}
+        .filter-btn.active {{ background: var(--primary); color: white; border-color: var(--primary); }}
+        .card {{ background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; border-left: 6px solid #ddd; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }}
         .card.hidden {{ display: none; }}
+        .card h2 {{ font-size: 1.4em; margin-top: 5px; color: var(--primary); }}
         .tag {{ padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; color: white; text-transform: uppercase; }}
         .tag-aberto {{ background: #27ae60; }} .tag-previsto {{ background: #f1c40f; color: #000; }} .tag-news {{ background: #3498db; }}
-        .buttons-container {{ display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }}
-        .btn {{ flex: 1; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; text-align: center; color: white; font-size: 13px; }}
+        .buttons-container {{ display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }}
+        .btn {{ flex: 1; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; color: white; font-size: 13px; }}
         .btn-amazon {{ background: var(--amazon); }} .btn-shopee {{ background: var(--shopee); }}
-        .btn-link {{ color: var(--primary); border: 1px solid var(--primary); flex: 1; text-align: center; text-decoration: none; border-radius: 5px; padding: 10px; font-size: 13px; }}
-        footer {{ text-align: center; padding: 40px; color: #888; font-size: 13px; }}
+        .btn-link {{ color: var(--primary); border: 1px solid var(--primary); flex: 1; text-align: center; text-decoration: none; border-radius: 6px; padding: 12px; font-size: 13px; }}
+        footer {{ text-align: center; padding: 50px 20px; color: #888; font-size: 13px; background: #eee; margin-top: 40px; }}
     </style>
 </head>
 <body>
-    <header><h1>📍 Alerta Concursos Hoje</h1><p>Atualizado em: {datetime.now().strftime('%d/%m/%Y %H:%M')}</p></header>
-    <div class="container">
-        <div class="filter-bar">{botoes_html}</div>
+    <header>
+        <h1>📍 Alerta Concursos Hoje</h1>
+        <p>Editais Atualizados em: {datetime.now().strftime('%d/%m/%Y às %H:%M')}</p>
+    </header>
+    <main class="container">
+        <nav class="filter-bar" aria-label="Filtros de notícias">{botoes_html}</nav>
         <div id="noticias">{" ".join(lista_cards)}</div>
-    </div>
+    </main>
+    <footer>
+        <p><b>Alerta Concursos Hoje</b> - {datetime.now().year}</p>
+        <p>As melhores oportunidades de concursos públicos reunidas automaticamente.</p>
+    </footer>
     <script>
         function filtrar(classe) {{
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
