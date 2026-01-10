@@ -2,13 +2,15 @@ name: Executar Robo de Concursos
 
 on:
   schedule:
-    # Este comando faz o robô rodar todos os dias às 09:00 e às 18:00 (Horário UTC)
+    # Roda todos os dias às 09:00 e às 18:00 (Horário UTC)
     - cron: '0 9,18 * * *'
-  workflow_dispatch: # Permite que você rode manualmente se quiser testar
+  workflow_dispatch: # Permite rodar manualmente
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Dá permissão para o robô salvar o site
     steps:
       - name: Baixar codigo do repositorio
         uses: actions/checkout@v3
@@ -19,7 +21,15 @@ jobs:
           python-version: '3.9'
 
       - name: Instalar Ferramentas
-        run: pip install -r requirements.txt
+        run: pip install feedparser
 
       - name: Rodar o Robo
         run: python robo.py
+
+      - name: Salvar alteracoes no site
+        run: |
+          git config --global user.name "Robo de Concursos"
+          git config --global user.email "actions@github.com"
+          git add index.html
+          git commit -m "Site atualizado automaticamente" || exit 0
+          git push
