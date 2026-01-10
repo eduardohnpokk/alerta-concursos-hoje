@@ -1,0 +1,25 @@
+name: Executar Robo de Concursos
+
+on:
+  schedule:
+    # Este comando faz o robô rodar todos os dias às 09:00 e às 18:00 (Horário UTC)
+    - cron: '0 9,18 * * *'
+  workflow_dispatch: # Permite que você rode manualmente se quiser testar
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar codigo do repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar Ferramentas
+        run: pip install -r requirements.txt
+
+      - name: Rodar o Robo
+        run: python robo.py
